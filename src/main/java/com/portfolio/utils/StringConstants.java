@@ -10,9 +10,11 @@ public interface StringConstants {
 
     String P_INDEX = "index";
     String P_ABOUT = "about";
-    String P_PORTFOLIO = "portfolio";
     String P_CONTACT = "contact";
     String P_TESTIMONIAL = "testimonial";
+    String P_PORTFOLIO = "portfolio";
+
+    String P_USERID = "user.userId";
 
     String PATH_INDEX = "/";
     String PATH_ABOUT = "/about";

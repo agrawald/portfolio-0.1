@@ -1,7 +1,10 @@
 package com.portfolio.dao;
 
+import com.portfolio.exception.ApplicationException;
 import com.portfolio.model.Portfolio;
 import com.portfolio.utils.StringConstants;
+import org.apache.log4j.Logger;
+import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
@@ -11,30 +14,24 @@ import org.springframework.data.mongodb.core.query.Update;
  */
 public class PortfolioDao extends GenericDao<Portfolio> {
 
-    @Override
     public void save(Portfolio model) {
-        mongoOperations.save(model);
+       super.save(model);
     }
 
-    @Override
-    public Portfolio findOne(Portfolio model) {
-        //TODO update findOne
-        Query qry = new Query(Criteria.where(StringConstants.P_PORTFOLIO).is(model.getPortfolio()));
-        return mongoOperations.findOne(qry, Portfolio.class);
+    public Portfolio findOne(Portfolio pPortfolio) throws ApplicationException {
+        return super.findOne(Portfolio.class,
+                Criteria.where(StringConstants.P_USERID).is(pPortfolio.getUserId()));
     }
 
-    @Override
-    public void update(Portfolio model) {
-        //TODO update Portfolio
-        Query qry = new Query(Criteria.where(StringConstants.P_PORTFOLIO).is(model.getPortfolio()));
-        mongoOperations.updateFirst(qry,
-                Update.update(StringConstants.P_PORTFOLIO, model.getPortfolio()),Portfolio.class);
+    public void update(Portfolio pPortfolio) throws ApplicationException {
+        Portfolio dbPortfolio = super.findOne(Portfolio.class,
+                Criteria.where(StringConstants.P_USERID).is(pPortfolio.getUserId()));
+        pPortfolio.setId(dbPortfolio.getId());
+        super.save(pPortfolio);
     }
 
-    @Override
-    public void remove(Portfolio model) {
-        //TODO update remove
-        Query qry = new Query(Criteria.where(StringConstants.P_PORTFOLIO).is(model.getPortfolio()));
-        mongoOperations.remove(qry, Portfolio.class);
+    public void remove(Portfolio pPortfolio) throws ApplicationException {
+        super.remove(Portfolio.class,
+                Criteria.where(StringConstants.P_USERID).is(pPortfolio.getUserId()));
     }
 }

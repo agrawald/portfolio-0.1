@@ -1,42 +1,40 @@
 package com.portfolio.model;
 
 import com.portfolio.utils.enume.StreetType;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * Created by e7006722 on 25/02/14.
  */
-@Document(collection="addresses")
-public class Address extends Model{
-    private String unitNo;
-    private String plotNo;
-    private String streetName;
-    private StreetType streetType;
+public class Address {
+    private String unit;
+    private String plot;
+    private String road;
+    private StreetType type;
     private String suburb;
     private Long zipcode;
 
-    public String getPlotNo() {
-        return plotNo;
+    public String getPlot() {
+        return plot;
     }
 
-    public void setPlotNo(String plotNo) {
-        this.plotNo = plotNo;
+    public void setPlot(String plot) {
+        this.plot = plot;
     }
 
-    public String getStreetName() {
-        return streetName;
+    public String getRoad() {
+        return road;
     }
 
-    public void setStreetName(String streetName) {
-        this.streetName = streetName;
+    public void setRoad(String road) {
+        this.road = road;
     }
 
-    public StreetType getStreetType() {
-        return streetType;
+    public StreetType getType() {
+        return type;
     }
 
-    public void setStreetType(StreetType streetType) {
-        this.streetType = streetType;
+    public void setType(StreetType type) {
+        this.type = type;
     }
 
     public String getSuburb() {
@@ -55,24 +53,24 @@ public class Address extends Model{
         this.zipcode = zipcode;
     }
 
-    public String getUnitNo() {
+    public String getUnit() {
 
-        return unitNo;
+        return unit;
     }
 
-    public void setUnitNo(String unitNo) {
-        this.unitNo = unitNo;
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     @Override
     public String toString() {
-        return "Address{" +
-                "unitNo='" + unitNo + '\'' +
-                ", plotNo='" + plotNo + '\'' +
-                ", streetName='" + streetName + '\'' +
-                ", streetType=" + streetType +
-                ", suburb='" + suburb + '\'' +
-                ", zipcode=" + zipcode +
+        return "{" +
+                "unit:'" + unit + '\'' +
+                ", plot:'" + plot + '\'' +
+                ", road:'" + road + '\'' +
+                ", type:" + type +
+                ", suburb:'" + suburb + '\'' +
+                ", zipcode:" + zipcode +
                 '}';
     }
 }

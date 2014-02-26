@@ -1,29 +1,50 @@
 package com.portfolio.model;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+
 /**
  * Created by e7006722 on 25/02/14.
  */
-public class User extends Model {
+public class User {
+    private String userId;
+    private String password;
     private String firstName;
     private String lastName;
     private Address address;
-    private String homeContact;
-    private String officeContact;
-    private String linkedIn;
-    private String about;
+    private Contact contact;
 
     @Override
     public String toString() {
-        return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address=" + address +
-                ", homeContact='" + homeContact + '\'' +
-                ", officeContact='" + officeContact + '\'' +
-                ", linkedIn='" + linkedIn + '\'' +
-                ", about='" + about + '\'' +
-                '}';
+        return new ToStringBuilder(this)
+                .append("userId", userId)
+                .append("password", password)
+                .append("firstName", firstName)
+                .append("lastName", lastName)
+                .append("address", address)
+                .append("contact", contact)
+                .append("linkedInUrl", linkedInUrl)
+                .append("about", about)
+                .toString();
     }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String linkedInUrl;
+    private String about;
 
     public String getAbout() {
         return about;
@@ -33,12 +54,12 @@ public class User extends Model {
         this.about = about;
     }
 
-    public String getLinkedIn() {
-        return linkedIn;
+    public String getLinkedInUrl() {
+        return linkedInUrl;
     }
 
-    public void setLinkedIn(String linkedIn) {
-        this.linkedIn = linkedIn;
+    public void setLinkedInUrl(String linkedInUrl) {
+        this.linkedInUrl = linkedInUrl;
     }
 
     public String getFirstName() {
@@ -65,19 +86,11 @@ public class User extends Model {
         this.address = address;
     }
 
-    public String getHomeContact() {
-        return homeContact;
+    public Contact getContact() {
+        return contact;
     }
 
-    public void setHomeContact(String homeContact) {
-        this.homeContact = homeContact;
-    }
-
-    public String getOfficeContact() {
-        return officeContact;
-    }
-
-    public void setOfficeContact(String officeContact) {
-        this.officeContact = officeContact;
+    public void setContact(Contact contact) {
+        this.contact = contact;
     }
 }

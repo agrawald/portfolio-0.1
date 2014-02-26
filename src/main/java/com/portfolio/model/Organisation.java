@@ -6,28 +6,15 @@ import java.util.List;
 /**
  * Created by e7006722 on 25/02/14.
  */
-public class Organisation extends Model {
+public class Organisation {
     private String name;
-    private String startDate;
-    private String endDate;
+    private String startDt;
+    private String endDt;
     private List<Project> projects = new ArrayList<Project>();
-    private String location;
+    private Location location;
     private String designation;
 
-    @Override
-    public String toString() {
-        return "Organisation{" +
-                "name='" + name + '\'' +
-                ", startDate='" + startDate + '\'' +
-                ", endDate='" + endDate + '\'' +
-                ", projects=" + projects +
-                ", location='" + location + '\'' +
-                ", designation='" + designation + '\'' +
-                '}';
-    }
-
-    public boolean assProject(Project pProject)
-    {
+    public boolean addProject(Project pProject) {
         return this.projects.add(pProject);
     }
 
@@ -39,20 +26,20 @@ public class Organisation extends Model {
         this.name = name;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getStartDt() {
+        return startDt;
     }
 
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
+    public void setStartDt(String startDt) {
+        this.startDt = startDt;
     }
 
-    public String getEndDate() {
-        return endDate;
+    public String getEndDt() {
+        return endDt;
     }
 
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
+    public void setEndDt(String endDt) {
+        this.endDt = endDt;
     }
 
     public List<Project> getProjects() {
@@ -63,11 +50,23 @@ public class Organisation extends Model {
         this.projects = projects;
     }
 
-    public String getLocation() {
+    @Override
+    public String toString() {
+        return "{" +
+                "name:'" + name + '\'' +
+                ", startDt:'" + startDt + '\'' +
+                ", endDt:'" + endDt + '\'' +
+                ", projects:" + projects +
+                ", location:" + location +
+                ", designation:'" + designation + '\'' +
+                '}';
+    }
+
+    public Location getLocation() {
         return location;
     }
 
-    public void setLocation(String location) {
+    public void setLocation(Location location) {
         this.location = location;
     }
 

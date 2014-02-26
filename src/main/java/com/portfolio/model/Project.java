@@ -1,13 +1,14 @@
 package com.portfolio.model;
 
-import org.apache.commons.collections.CollectionUtils;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Created by e7006722 on 25/02/14.
  */
-public class Project extends Model {
+public class Project {
     private String name;
     private String client;
     private String role;
@@ -33,18 +34,15 @@ public class Project extends Model {
         this.role = role;
     }
 
-    public boolean addResponsibility(String pResponsibility)
-    {
+    public boolean addResponsibility(String pResponsibility) {
         return this.responsibilities.add(pResponsibility);
     }
 
-    public boolean addTestimonial(Testimonial pTestimonial)
-    {
+    public boolean addTestimonial(Testimonial pTestimonial) {
         return this.testimonials.add(pTestimonial);
     }
 
-    public boolean addTechnology(Technology pTechnology)
-    {
+    public boolean addTechnology(Technology pTechnology) {
         return this.technologies.add(pTechnology);
     }
 
@@ -59,14 +57,14 @@ public class Project extends Model {
 
     @Override
     public String toString() {
-        return "Project{" +
-                "name='" + name + '\'' +
-                ", client='" + client + '\'' +
-                ", role='" + role + '\'' +
-                ", description='" + description + '\'' +
-                ", responsibilities=" + responsibilities +
-                ", testimonials=" + testimonials +
-                ", technologies=" + technologies +
+        return "{" +
+                "name:'" + name + '\'' +
+                ", client:'" + client + '\'' +
+                ", role:'" + role + '\'' +
+                ", description:'" + description + '\'' +
+                ", responsibilities:" + responsibilities +
+                ", testimonials:" + testimonials +
+                ", technologies:" + technologies +
                 '}';
     }
 

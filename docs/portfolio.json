@@ -1,0 +1,230 @@
+{
+    user: {
+        userId: "dagrawal",
+        password: "someencryptedpassword",
+        firstName: "Dheeraj",
+        lastName: "Agrawal",
+        contact: {
+            home: "03123434",
+            mobile: "+61470020152"
+        },
+        linkedInUrl: "https://",
+        about: "",
+        address: {
+            unit: "5",
+            plot: "20",
+            road: "Loch",
+            type: "Avenue",
+            suburb: "St Kilda East",
+            zipcode: "3183"
+        }
+    },
+    organisation: [
+        {
+            name: "Syntel Pvt Ltd",
+            startDt: "05/09/2005",
+            endDt: "05/04/2007",
+            location: {
+                city: "Pune",
+                state: "Maharastra",
+                country: "India"
+            },
+            designation: "Analyst Programmer",
+            projects: [
+                {
+                    name: "Gift Card",
+                    client: "American Express",
+                    role: "Analyst Programmer",
+                    description: "A very long description",
+                    testimonials: [
+                        {
+                            description: "A very cool testimonial #1",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+
+                        },
+                        {
+                            description: "A very cool testimonial #2",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+
+                        }
+                    ],
+                    responsibilities: [
+                        "A very responsible text #1",
+                        "A very responsible text #2"
+                    ],
+                    technologies: [
+                        "Java",
+                        "J2EE",
+                        "Cool Plex"
+                    ]
+                },
+                {
+                    name: "Teamcenter",
+                    client: "NA",
+                    role: "Analyst Programmer",
+                    description: "A very long description",
+                    testimonials: [
+                        {
+                            description: "A very cool testimonial #1",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+
+                        },
+                        {
+                            description: "A very cool testimonial #2",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+
+                        }
+                    ],
+                    responsibilities: [
+                        "A very responsible text #1",
+                        "A very responsible text #2"
+                    ],
+                    technologies: [
+                        {
+                            name: "Java",
+                            experience: "8"
+                        },
+                        {
+                            name: "J2ee",
+                            experience: "8"
+                        },
+                        {
+                            name: "Teamcenter",
+                            experience: "8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "CSC Pvt Ltd",
+            startDt: "05/04/2007",
+            endDt: "05/04/2010",
+            location: {
+                city: "Noida",
+                state: "UP",
+                country: "India"
+            },
+            designation: "Software Developer",
+            projects: [
+                {
+                    name: "Resource Management System",
+                    client: "Inhouse",
+                    role: "Project Architect/Team Leader",
+                    description: "A very long description",
+                    testimonials: [
+                        {
+                            description: "A very cool testimonial #1",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+                        },
+                        {
+                            description: "A very cool testimonial #2",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+                        }
+                    ],
+                    responsibilities: [
+                        "A very responsible text #1",
+                        "A very responsible text #2"
+                    ],
+                    technologies: [
+                        {
+                            name: "Java",
+                            experience: "8"
+                        },
+                        {
+                            name: "J2ee",
+                            experience: "8"
+                        },
+                        {
+                            name: "Teamcenter",
+                            experience: "8"
+                        }
+                    ]
+                },
+                {
+                    name: "Life Underwriting System",
+                    client: "Allstate",
+                    role: "Team Lead",
+                    description: "A very long description",
+                    testimonials: [
+                        {
+                            description: "A very cool testimonial #1",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+
+                        },
+                        {
+                            description: "A very cool testimonial #2",
+                            givenBy: "",
+                            company: "",
+                            project: ""
+
+                        }
+                    ],
+                    responsibilities: [
+                        "A very responsible text #1",
+                        "A very responsible text #2"
+                    ],
+                    technologies: [
+                        {
+                            name: "Java",
+                            experience: "8"
+                        },
+                        {
+                            name: "J2ee",
+                            experience: "8"
+                        },
+                        {
+                            name: "Teamcenter",
+                            experience: "8"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    allTestimonials: [
+        {
+            description: "A very cool testimonial #1",
+            givenBy: "",
+            company: "",
+            project: ""
+
+        },
+        {
+            description: "A very cool testimonial #2",
+            givenBy: "",
+            company: "",
+            project: ""
+
+        }
+    ],
+    allTechnologies: [
+        {
+            name: "Java",
+            experience: "8"
+        },
+        {
+            name: "J2ee",
+            experience: "8"
+        },
+        {
+            name: "Teamcenter",
+            experience: "8"
+        }
+    ],
+    enabled: "true"
+}

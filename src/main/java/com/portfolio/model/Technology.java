@@ -1,9 +1,11 @@
 package com.portfolio.model;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+
 /**
  * Created by e7006722 on 25/02/14.
  */
-public class Technology extends Model {
+public class Technology {
     private String name;
     private String totalExperience;
 
@@ -30,14 +32,6 @@ public class Technology extends Model {
         return result;
     }
 
-    @Override
-    public String toString() {
-        return "Technology{" +
-                "name='" + name + '\'' +
-                ", totalExperience='" + totalExperience + '\'' +
-                '}';
-    }
-
     public String getName() {
         return name;
     }
@@ -52,5 +46,13 @@ public class Technology extends Model {
 
     public void setTotalExperience(String totalExperience) {
         this.totalExperience = totalExperience;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this)
+                .append("name", name)
+                .append("totalExperience", totalExperience)
+                .toString();
     }
 }
