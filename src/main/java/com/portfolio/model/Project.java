@@ -17,6 +17,9 @@ public class Project {
     private List<Testimonial> testimonials = new ArrayList<Testimonial>();
     private Set<Technology> technologies = new HashSet<Technology>();
 
+    public Project() {
+    }
+
 
     public String getClient() {
         return client;

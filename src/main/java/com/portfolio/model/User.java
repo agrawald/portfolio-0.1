@@ -27,6 +27,9 @@ public class User {
                 .toString();
     }
 
+    public User() {
+    }
+
     public String getUserId() {
         return userId;
     }

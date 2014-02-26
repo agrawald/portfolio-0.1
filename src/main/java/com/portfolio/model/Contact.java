@@ -8,6 +8,9 @@ public class Contact {
     private String phone;
     private String mobile;
 
+    public Contact() {
+    }
+
     @Override
     public String toString() {
         return "{" +

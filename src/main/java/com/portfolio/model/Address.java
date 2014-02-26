@@ -9,6 +9,10 @@ public class Address {
     private String unit;
     private String plot;
     private String road;
+
+    public Address() {
+    }
+
     private StreetType type;
     private String suburb;
     private Long zipcode;

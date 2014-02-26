@@ -19,7 +19,7 @@
             zipcode: "3183"
         }
     },
-    organisation: [
+    organisations: [
         {
             name: "Syntel Pvt Ltd",
             startDt: "05/09/2005",
@@ -57,9 +57,18 @@
                         "A very responsible text #2"
                     ],
                     technologies: [
-                        "Java",
-                        "J2EE",
-                        "Cool Plex"
+                        {
+                            name: "Java",
+                            experience: "8"
+                        },
+                        {
+                            name: "J2ee",
+                            experience: "8"
+                        },
+                        {
+                            name: "Teamcenter",
+                            experience: "8"
+                        }
                     ]
                 },
                 {

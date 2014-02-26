@@ -3,6 +3,7 @@ package com.portfolio.model;
 import com.portfolio.exception.ApplicationException;
 import com.portfolio.exception.ErrorCode;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang.builder.ToStringBuilder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -17,8 +18,8 @@ public class Portfolio {
     private String id;
     private User user;
     private List<Organisation> organisations = new ArrayList<Organisation>();
-    private Map<String, Float> technologiesExp = new HashMap<String, Float>();
-    private List<String> testimonials = new ArrayList<String>();
+    private List<Technology> allTechnologies = new ArrayList<Technology>();
+    private List<Testimonial> allTestimonials = new ArrayList<Testimonial>();
     private boolean enabled = false;
 
     public Portfolio(User user) {
@@ -40,36 +41,32 @@ public class Portfolio {
         return enabled;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-                "id:'" + id + '\'' +
-                ", user:" + user +
-                ", organisations:" + organisations +
-                ", technologiesExp:" + technologiesExp +
-                ", testimonials:" + testimonials +
-                ", enabled:" + enabled +
-                '}';
-    }
-
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
 
-    public Map<String, Float> getTechnologiesExp() {
-        return technologiesExp;
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this)
+                .append("id", id)
+                .append("user", user)
+                .append("organisations", organisations)
+                .append("allTechnologies", allTechnologies)
+                .append("allTestimonials", allTestimonials)
+                .append("enabled", enabled)
+                .toString();
     }
 
-    public void setTechnologiesExp(Map<String, Float> technologiesExp) {
-        this.technologiesExp = technologiesExp;
+    public void setAllTechnologies(List<Technology> allTechnologies) {
+        this.allTechnologies = allTechnologies;
     }
 
-    public List<String> getTestimonials() {
-        return testimonials;
+    public List<Testimonial> getAllTestimonials() {
+        return allTestimonials;
     }
 
-    public void setTestimonials(List<String> testimonials) {
-        this.testimonials = testimonials;
+    public void setAllTestimonials(List<Testimonial> allTestimonials) {
+        this.allTestimonials = allTestimonials;
     }
 
     public User getUser() {
@@ -109,7 +106,7 @@ public class Portfolio {
     public Set<Technology> getAllTechnologies() {
         Set<Technology> technologies = new HashSet<Technology>();
         if (!CollectionUtils.isEmpty(organisations)) {
-            for (Organisation organisation : organisations) {
+            for (Organisation organisation : this.organisations) {
                 if (!CollectionUtils.isEmpty(organisation.getProjects())) {
                     for (Project project : organisation.getProjects()) {
                         technologies.addAll(project.getTechnologies());

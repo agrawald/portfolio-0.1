@@ -27,6 +27,9 @@ public class Testimonial {
         this.givenBy = givenBy;
     }
 
+    public Testimonial() {
+    }
+
     public String getDescription() {
         return description;
     }

@@ -14,6 +14,9 @@ public class Organisation {
     private Location location;
     private String designation;
 
+    public Organisation() {
+    }
+
     public boolean addProject(Project pProject) {
         return this.projects.add(pProject);
     }

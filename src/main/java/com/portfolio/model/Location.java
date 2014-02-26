@@ -8,6 +8,9 @@ public class Location {
     private String state;
     private String country;
 
+    public Location() {
+    }
+
     @Override
     public String toString() {
         return "{" +

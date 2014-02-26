@@ -7,7 +7,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public class Technology {
     private String name;
-    private String totalExperience;
+    private String experience;
+
+    public Technology() {
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -18,7 +21,7 @@ public class Technology {
         Technology that = (Technology) o;
 
         if (!name.equals(that.name)) return false;
-        if (totalExperience != null ? !totalExperience.equals(that.totalExperience) : that.totalExperience != null)
+        if (experience != null ? !experience.equals(that.experience) : that.experience != null)
             return false;
 
         return true;
@@ -28,7 +31,7 @@ public class Technology {
     public int hashCode() {
         int result = super.hashCode();
         result = 31 * result + name.hashCode();
-        result = 31 * result + (totalExperience != null ? totalExperience.hashCode() : 0);
+        result = 31 * result + (experience != null ? experience.hashCode() : 0);
         return result;
     }
 
@@ -40,19 +43,19 @@ public class Technology {
         this.name = name;
     }
 
-    public String getTotalExperience() {
-        return totalExperience;
+    public String getExperience() {
+        return experience;
     }
 
-    public void setTotalExperience(String totalExperience) {
-        this.totalExperience = totalExperience;
+    public void setExperience(String experience) {
+        this.experience = experience;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
                 .append("name", name)
-                .append("totalExperience", totalExperience)
+                .append("experience", experience)
                 .toString();
     }
 }
