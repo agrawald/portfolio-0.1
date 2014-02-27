@@ -4,6 +4,7 @@ import com.portfolio.exception.ApplicationException;
 import com.portfolio.exception.ErrorCode;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 

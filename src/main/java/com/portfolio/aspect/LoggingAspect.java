@@ -24,7 +24,7 @@ public class LoggingAspect {
 
         logger.debug(methodName + " called with args..." + pjp.getArgs());
         Object retVal = pjp.proceed();
-        logger.debug(methodName + " returned with value..." + retVal.toString());
+        logger.debug(methodName + " returned with value..." + retVal);
 
         return retVal;
     }

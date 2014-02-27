@@ -34,8 +34,13 @@ public class GenericDao<T> {
         mongoOperations.remove(qry, clazz);
     }
 
-    protected List<T> findAll(Class<T> clazz)
-    {
+    protected List<T> find(Class<T> clazz, Criteria criteria){
+        Query qry = new Query(criteria);
+        return mongoOperations.find(qry, clazz);
+    }
+
+    protected List<T> findAll(Class<T> clazz){
         return mongoOperations.findAll(clazz);
     }
+
 }

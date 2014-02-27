@@ -20,7 +20,10 @@ public class PortfolioDao extends GenericDao<Portfolio> {
 
     public Portfolio findOne(String pUserId) {
         return super.findOne(Portfolio.class,
-                Criteria.where(StringConstants.USER_USERID).is(pUserId));
+                Criteria.where(StringConstants.USER_USERID)
+                        .is(pUserId)
+                        .and(StringConstants.ENABLED)
+                        .is("true"));
     }
 
     public void update(Portfolio pPortfolio) throws ApplicationException {
@@ -35,8 +38,14 @@ public class PortfolioDao extends GenericDao<Portfolio> {
                 Criteria.where(StringConstants.USER_USERID).is(pUserId));
     }
 
-    public List<Portfolio> findAll()
-    {
+    public List<Portfolio> find(String pUserId) {
+        return super.find(Portfolio.class,
+                Criteria.where(StringConstants.USER_USERID)
+                        .is(pUserId));
+    }
+
+    public List<Portfolio> findAll() {
         return super.findAll(Portfolio.class);
     }
+
 }

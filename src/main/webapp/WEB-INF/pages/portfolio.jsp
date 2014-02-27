@@ -1,5 +1,33 @@
 <html>
-<body>
-<h1>${portfolio}</h1>
+    <body>
+        <table>
+            <tr>
+                <th>About</th>
+            </tr>
+            <tr>
+                <td><p>${portfolio.about}</p></td>
+            </tr>
+            <tr>
+                <th>Portfolio</th>
+            </tr>
+            <tr>
+                <td>${portfolio}</td>
+            </tr>
+            <tr>
+                <th>Technologies</th>
+            </tr>
+            <tr>
+                <c:forEach >
+
+                </c:forEach>
+                <td>${portfolio.allTechnologies}</td>
+            </tr>
+            <tr>
+                <th>Testimonials</th>
+            </tr>
+            <tr>
+                <td>${portfolio.allTestimonials}</td>
+            </tr>
+        </table>
 </body>
 </html>

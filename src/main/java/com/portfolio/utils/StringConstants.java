@@ -19,7 +19,7 @@ public interface StringConstants {
     String P_ERROR = "error";
 
     String USER_USERID = "user.userId";
-
+    String ENABLED = "enabled";
 
     String PATH_INDEX = "/{"+P_USERID+"}";
     String PATH_ABOUT = "/about/{"+P_USERID+"}";

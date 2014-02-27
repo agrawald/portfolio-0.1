@@ -24,6 +24,11 @@ public class PortfolioSvcImpl implements PortfolioSvc {
     }
 
     @Override
+    public List<Portfolio> getAll(String pUserId) {
+        return portfolioDao.find(pUserId);
+    }
+
+    @Override
     public void update(Portfolio pPortfolio) throws ApplicationException {
         portfolioDao.update(pPortfolio);
     }

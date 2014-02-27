@@ -27,4 +27,6 @@
     </bean>
 
     <bean id="logAspect" class="com.portfolio.aspect.LoggingAspect"/>
+
+    <bean id="mapper" class="org.codehaus.jackson.map.ObjectMapper"/>
 </beans>
