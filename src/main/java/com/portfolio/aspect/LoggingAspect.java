@@ -7,6 +7,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.context.annotation.Bean;
 
 /**
  * Created by e7006722 on 26/02/14.
@@ -17,13 +18,13 @@ public class LoggingAspect {
 
     @Around("execution(* com.portfolio..*.*(..))")
     public Object doMethodLogging(ProceedingJoinPoint pjp) throws Throwable {
-        Class clazz = pjp.getClass();
         String methodName = pjp.getSignature().getName();
-        logger = Logger.getLogger(clazz);
+        Class declaringType = pjp.getSignature().getDeclaringType();
+        logger = Logger.getLogger(declaringType);
 
-        logger.debug(clazz.getName() + "." + methodName + " called with args..." + pjp.getArgs());
+        logger.debug(methodName + " called with args..." + pjp.getArgs());
         Object retVal = pjp.proceed();
-        logger.debug(clazz.getName() + "." + methodName + " returned with value..." + retVal.toString());
+        logger.debug(methodName + " returned with value..." + retVal.toString());
 
         return retVal;
     }

@@ -33,7 +33,7 @@ public class PortfolioDaoTest extends SpringTest {
 
     @Test
     public void testFindOne() throws Exception {
-        portfolio = portfolioDao.findOne(portfolio);
+        portfolio = portfolioDao.findOne("dagrawal");
         Assert.assertNotNull("User id null", portfolio.getId());
         Assert.assertNotNull("User is null", portfolio.getUser());
         Assert.assertNotNull("Organisation is null", portfolio.getOrganisations());

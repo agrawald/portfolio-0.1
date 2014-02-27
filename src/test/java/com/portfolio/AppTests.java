@@ -10,14 +10,15 @@ public class AppTests extends SpringTest {
 
     @Test
     public void index() throws Exception {
-        mockMvc.perform(get("/"))
+        mockMvc.perform(get("/dagrawal"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"));
+
     }
 
     @Test
     public void about() throws Exception {
-        mockMvc.perform(get("/about"))
+        mockMvc.perform(get("/about/dagrawal"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("about"));
     }

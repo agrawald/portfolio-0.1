@@ -1,5 +1,5 @@
 <html>
 <body>
-<h1>${contact}</h1>
+<h1>${allTestimonials}</h1>
 </body>
 </html>

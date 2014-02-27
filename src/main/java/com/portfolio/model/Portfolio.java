@@ -21,6 +21,38 @@ public class Portfolio {
     private List<Technology> allTechnologies = new ArrayList<Technology>();
     private List<Testimonial> allTestimonials = new ArrayList<Testimonial>();
     private boolean enabled = false;
+    private String about;
+    private String contactMe;
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this)
+                .append("id", id)
+                .append("user", user)
+                .append("organisations", organisations)
+                .append("allTechnologies", allTechnologies)
+                .append("allTestimonials", allTestimonials)
+                .append("enabled", enabled)
+                .append("about", about)
+                .append("contactMe", contactMe)
+                .toString();
+    }
+
+    public String getContactMe() {
+        return contactMe;
+    }
+
+    public void setContactMe(String contactMe) {
+        this.contactMe = contactMe;
+    }
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
 
     public Portfolio(User user) {
         this.user = user;
@@ -43,18 +75,6 @@ public class Portfolio {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
-    }
-
-    @Override
-    public String toString() {
-        return new ToStringBuilder(this)
-                .append("id", id)
-                .append("user", user)
-                .append("organisations", organisations)
-                .append("allTechnologies", allTechnologies)
-                .append("allTestimonials", allTestimonials)
-                .append("enabled", enabled)
-                .toString();
     }
 
     public void setAllTechnologies(List<Technology> allTechnologies) {

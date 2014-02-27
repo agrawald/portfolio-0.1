@@ -1,7 +1,9 @@
 package com.portfolio.config;
 
 import com.mongodb.MongoClient;
+import com.portfolio.aspect.LoggingAspect;
 import com.portfolio.utils.StringConstants;
+import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.MongoDbFactory;
@@ -12,7 +14,7 @@ import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
  * Created by e7006722 on 25/02/14.
  */
 @Configuration
-public class MongoConfig {
+public class AppConfig {
     public
     @Bean
     MongoDbFactory mongoDbFactory() throws Exception {
@@ -25,4 +27,5 @@ public class MongoConfig {
         MongoTemplate mongoTemplate = new MongoTemplate(mongoDbFactory());
         return mongoTemplate;
     }
+
 }

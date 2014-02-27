@@ -235,5 +235,7 @@
             experience: "8"
         }
     ],
+    about: "How awesome i am",
+    contactMe: "How to contact me",
     enabled: "true"
 }

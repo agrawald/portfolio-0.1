@@ -8,18 +8,24 @@ public interface StringConstants {
 
     String BEAN_MONGO_TEMPLATE = "mongoTemplate";
 
-    String P_INDEX = "index";
     String P_ABOUT = "about";
-    String P_CONTACT = "contact";
-    String P_TESTIMONIAL = "testimonial";
+    String P_CONTACT_ME = "contactMe";
+    String P_COMMAND = "command";
+    String P_ALL_TESTIMONIAL = "allTestimonials";
+    String P_ALL_TECHNOLOGIES = "allTechnologies";
     String P_PORTFOLIO = "portfolio";
+    String P_USERID = "pUserId";
+    String P_SUCCESS = "success";
+    String P_ERROR = "error";
 
-    String P_USERID = "user.userId";
+    String USER_USERID = "user.userId";
 
-    String PATH_INDEX = "/";
-    String PATH_ABOUT = "/about";
-    String PATH_PORTFOLIO = "/portfolio";
-    String PATH_CONTACT = "/contact";
-    String PATH_TESTIMONIAL = "/testimonial";
+
+    String PATH_INDEX = "/{"+P_USERID+"}";
+    String PATH_ABOUT = "/about/{"+P_USERID+"}";
+    String PATH_PORTFOLIO = "/portfolio/{"+P_USERID+"}";
+    String PATH_CONTACT_ME = "/contactMe/{"+P_USERID+"}";
+    String PATH_ALL_TESTIMONIAL = "/allTestimonial/{"+P_USERID+"}";
+    String PATH_ALL_TECHNOLOGIES = "/allTechnologies/{"+P_USERID+"}";
 
 }
