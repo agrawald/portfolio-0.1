@@ -21,7 +21,7 @@ public interface StringConstants {
     String USER_USERID = "user.userId";
     String ENABLED = "enabled";
 
-    String PATH_INDEX = "/{"+P_USERID+"}";
+    String PATH_INDEX = "/";
     String PATH_ABOUT = "/about/{"+P_USERID+"}";
     String PATH_PORTFOLIO = "/portfolio/{"+P_USERID+"}";
     String PATH_CONTACT_ME = "/contactMe/{"+P_USERID+"}";

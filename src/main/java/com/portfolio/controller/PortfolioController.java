@@ -8,33 +8,25 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@SessionAttributes
 public class PortfolioController extends GenericController {
-
     @RequestMapping(value = {StringConstants.PATH_PORTFOLIO},
-            method = RequestMethod.GET)
-    public ModelAndView get(@PathVariable String pUserId) {
-        ModelAndView modelAndView;
-        try {
-            modelAndView = new ModelAndView("portfolio");
-            modelAndView.addObject(StringConstants.P_PORTFOLIO, jsonUtils.toJson(portfolioSvc.get(pUserId)));
-        } catch (ApplicationException e) {
-            modelAndView = errorPage(e);
-        }
-        return modelAndView;
+            method = RequestMethod.GET,
+            produces = "application/json")
+    @ResponseBody
+    public String get(@PathVariable String pUserId) throws ApplicationException {
+        return jsonUtils.toJson(portfolioSvc.get(pUserId));
     }
 
-    @RequestMapping(value = {StringConstants.PATH_INDEX, StringConstants.PATH_PORTFOLIO},
+    @RequestMapping(value = {StringConstants.PATH_PORTFOLIO},
             method = RequestMethod.DELETE)
     public ResponseEntity<String> delete(@PathVariable String pUserId) {
         portfolioSvc.remove(pUserId);
         return new ResponseEntity<String>("Portfolio deleted successfully!", HttpStatus.OK);
     }
 
-    @RequestMapping(value = {StringConstants.PATH_INDEX, StringConstants.PATH_PORTFOLIO},
+    @RequestMapping(value = {StringConstants.PATH_PORTFOLIO},
             method = {RequestMethod.PUT, RequestMethod.POST})
     public ResponseEntity<String> save(@ModelAttribute("portfolio") Portfolio pPortfolio, ModelMap model) {
         try {

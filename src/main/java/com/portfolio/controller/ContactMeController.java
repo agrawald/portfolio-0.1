@@ -32,7 +32,7 @@ public class ContactMeController extends GenericController {
 
     @RequestMapping(value = StringConstants.PATH_CONTACT_ME, method = RequestMethod.POST)
     public ModelAndView post(@ModelAttribute(StringConstants.P_CONTACT_ME) ContactMe pContactMe, @PathVariable String pUserId) {
-        ModelAndView modelAndView = new ModelAndView("contactMe");
+        ModelAndView modelAndView = new ModelAndView("contactMe.htm");
         contactMeSvc.add(pContactMe);
         Portfolio portfolio = portfolioSvc.get(pUserId);
         modelAndView.addObject(StringConstants.P_CONTACT_ME, portfolio.getContactMe());
