@@ -1,7 +1,7 @@
 $(function(){
     var Portfolio = Backbone.Model.extend({
         urlRoot: 'http://localhost:8080/api/portfolio',
-        idAttribute: 'user.userId',
+        idAttribute: 'id',
         url: function(){
             return this.urlRoot;
         }
@@ -18,55 +18,58 @@ $(function(){
         }
     });
 
-    var PortfolioView = Backbone.View.extend({
-        tagName:'div',
-        className: 'portfolio',
-        template: _.template($('#tPortfolio').html()),
+    var GenericView = Backbone.View.extend({
         initialize: function(){
-            this.portfolios = new PortfolioCollection();
-            this.portfolios.fetch({
-                success: function(response){
-                    console.log(response);
-                    this.render();
-                },
-                error: function(response){
-                    console.log(response);
+            var _this = this;
+            var collection= new PortfolioCollection();
+            collection.fetch({
+                success: function(collection){
+                    _.each(collection.models, function(model){
+                        if(model.attributes.enabled)
+                            _this.render(model)
+                    })
                 }
             });
         },
-        render: function(){
-            this.$el.html(this.template(this.model.toJSON()));
+        render: function(model){
+            if(!_.isUndefined(model))
+            {
+                console.log("In render" + model);
+                var hb_template = Handlebars.compile(this.template);
+                var html = hb_template(model.toJSON());
+                this.$el.html(html);
+            }
             return this;
         }
     });
 
-    var HeaderView = PortfolioView.extend({
-        tagName:'div',
-        className: 'header',
-        template: _.template($('#tHeader').html())
+    var PortfolioView = GenericView.extend({
+        el:'.portfolio',
+        template: $('#tPortfolio').html()
     });
 
-    var AboutView = PortfolioView.extend({
-        tagName:'div',
-        className: 'about',
-        template: _.template($('#tAbout').html())
+    var HeaderView = GenericView.extend({
+        el: '.header',
+        template: $('#tHeader').html()
     });
 
-    var TechnologiesView = PortfolioView.extend({
-        tagName:'div',
-        className: 'technologies',
-        template: _.template($('#tTechnologies').html())
+    var AboutView = GenericView.extend({
+        el: '.about',
+        template: $('#tAbout').html()
     });
 
-    var TestimonialsView = PortfolioView.extend({
-        tagName:'div',
-        className: 'testimonials',
-        template: _.template($('#tTestimonials').html())
+    var TechnologiesView = GenericView.extend({
+        el: '.technologies',
+        template: $('#tTechnologies').html()
+    });
+
+    var TestimonialsView = GenericView.extend({
+        el: '.testimonials',
+        template: $('#tTestimonials').html()
     });
 
     var ContactMeView = Backbone.View.extend({
-        tagName:'div',
-        className: 'contactMe',
+        el: '.contactMe',
         initialize: function(){
         },
         render: function(){
@@ -83,26 +86,54 @@ $(function(){
             'contactMe': 'contactMe',
             'download' : 'download'
         },
+        v_shown: '',
         initialize: function(){
-          new HeaderView();
+            this.header();
+            this.portfolio();
+            this.technologies();
+            this.testimonials();
+            this.contactMe();
+            this.v_shown=this.about();
+        },
+        header: function(){
+            var v_header = new HeaderView();
+            v_header.render();
+            return v_header;
         },
         about: function(){
-            return new AboutView();
+            return this.showView(new AboutView());
         },
         portfolio: function(){
-            return new PortfolioView();
+            return this.showView(new PortfolioView());
         },
         technologies: function(){
-            return new TechnologiesView();
+            return this.showView(new TechnologiesView());
         },
         testimonials: function(){
-            return new TestimonialsView();
+            return this.showView(new TestimonialsView());
         },
         contactMe: function(){
-            return new ContactMeView();
+            return this.showView(new ContactMeView());
         },
         download: function(){
             //TODO
+        },
+        showView: function(v_to_show)
+        {
+            if(!_.isEmpty(this.v_shown))
+            {
+                this.v_shown.el.style.display = 'none';
+                this.v_shown.$el.stop().animate({
+                    left: '100%'
+                }, 1500);
+            }
+            this.v_shown = v_to_show;
+            v_to_show.render();
+            v_to_show.el.style.display = "inline";
+            v_to_show.$el.stop().animate({
+                'left': '.5%'
+            }, 1500);
+            return v_to_show;
         }
     });
 

@@ -1,0 +1,75 @@
+.effect{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.body{
+    background-color: #4F4F4F;
+}
+
+.header, .footer{
+    width:99%;
+    height:15%;
+    position:fixed;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    overflow-y: auto;
+    background-color: firebrick;
+    color: white;
+    font-family: "Lucida Console" ;
+}
+
+.button {
+    display: block;
+    background: firebrick;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.header{
+    top: .5%;
+}
+
+.footer{
+    top: 94%;
+    height: 5%;
+}
+
+.table{
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.row{
+    display: table-row;
+    width: 100%;
+    text-align: center;
+}
+
+.cell{
+    display: table-cell;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.portfolio, .about, .technologies, .testimonials, .contactMe
+{
+    top: 16%;
+    width: 99%;
+    height:77%;
+    left: 100%;
+    position:fixed;
+    overflow-y: auto;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #2F3133;
+    color: white;
+    font-family: 'Lucida Console', monospace;
+}
