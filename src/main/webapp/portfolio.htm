@@ -12,93 +12,114 @@
     <script src="scripts/portfolio.js"></script>
 
     <script id="tHeader" type="text/template">
-        <div class="table">
-            <div class="row">
-                <div class="cell">
-                    <h1>{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</h1>
-                    <h4>{{#contact user.contact}} M:{{mobile}}  H:{{phone}} {{/contact}}</h4>
-                </div>
-                <div class="cell">
-                    <p><a href="{{user.linkedInUrl}}" class="button">Let's linked-in</a></p>
-                    <p><a href="#download" class="button">TODO Download resume</a></p>
-                </div>
-            </div>
-        </div>
+        <table class="table">
+            <tr class="row">
+                <td class="lcell wider">
+                    {{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}
+                </td>
+                <td class="rcell"><a href="{{user.linkedInUrl}}" class="link">Let's linked-in</a></td>
+            </tr>
+            <tr>
+                <td class="lcell wider">
+                    {{#contact user.contact}}
+                    M:{{mobile}}&nbsp;H:{{phone}}
+                    {{/contact}}
+                </td>
+                <td class="rcell"><a href="#download" class="link">Download resume</a></td>
+            </tr>
+        </table>
     </script>
     <script id="tAbout" type="text/template">
         <p style="text-align: justify">{{user.about}}</p>
     </script>
     <script id="tPortfolio" type="text/template">
-        <div class="organisation">
-            {{#list organisations}}
-                <h2>{{name}} ({{startDt}}-{{endDt}})</h2>
-                <h3>{{designation}} </h3>
+        {{#each organisations}}
+        <section id="{{name}}">
+            <h2 class="fixed"><a href="#{{name}}">{{name}}</a></h2>
+            <p>{{designation}} - {{name}} - ({{startDt}}-{{endDt}})
+            <div class="scrollable">
                 {{#list projects}}
-                    <div class="project">
-                        <h3>{{name}} - {{role}} - {{client}}</h3>
-                        <p>{{description}}</p>
-                        <h4>Responsibilities</h4>
-                        {{#list responsibilities}}{{/list}}
-                        <h4>Technologies</h4>
-                        {{#list technologies}} {{name}} {{experience}} {{/list}}
-                    </div>
+
+                <h3>{{name}} - {{role}} - {{client}}</h3>
+
+                <p>{{description}}</p>
+                <h4>Responsibilities</h4>
+                {{#list responsibilities}}{{/list}}
+                <h4>Technologies</h4>
+                {{#list technologies}} {{name}} {{experience}} {{/list}}
                 {{/list}}
-            {{/list}}
-        </div>
+            </div>
+            </p>
+        </section>
+        {{/each}}
     </script>
     <script id="tTechnologies" type="text/template">
-        {{#list allTechnologies}} {{name}} {{experience}} {{/list}}
+        {{#each allTechnologies}}
+        <p class="technology">{{name}}</p>
+        {{/each}}
     </script>
     <script id="tTestimonials" type="text/template">
-        {{#list allTestimonials}} {{description}} {{project}} {{/list}}
+        {{#each allTestimonials}}
+        <p>"{{description}}"</p>
+        <p>-{{project}}</p>
+        {{/each}}
+    </script>
+    <script id="tContactMe" type="text/template">
+        <table class="table">
+            <tr>
+                <td colspan="2" class="ccell"><h2>Contact Me</h2></td>
+            </tr>
+            <tr>
+                <td style="border-right: solid; border-right-color: firebrick">{{contactMe}}</td>
+                <td>
+                    <form id="contactMe" method="post" action="#">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="lcell"><label path="name">Full Name: </label></td>
+                                <td class="lcell"><input path="name"/></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="lcell"><label path="email">Email: </label></td>
+                                <td class="lcell"><input path="email"/></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="lcell"><label path="contact">Telephone: </label></td>
+                                <td class="lcell"><input path="contact"/></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="lcell"><label path="message">Message: </label></td>
+                                <td class="lcell"><textarea path="message"></textarea></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="ccell"><input type="reset" value="Clear"/></td>
+                                <td class="ccell"><input type="submit" value="Submit"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
     </script>
 </head>
 <body class="body">
-    <div class="header effect"></div>
-    <div class="contents">
-        <div class="about" style="display: inline"></div>
-        <div class="portfolio" style="display: none"></div>
-        <div class="technologies" style="display: none"></div>
-        <div class="testimonials" style="display: none"></div>
-        <div class="contactMe" style="display: none">
-            <form id="contactMe" method="post" action="#">
-                <div class="table">
-                    <div class="row">
-                    <div class="cell"><h1>Contact Me - TODO</h1></div>
-                    <div class="row">
-                        <div class="cell"><label path="name">Full Name: </label></div>
-                        <div class="cell"><input path="name"/></div>
-                    </div>
-                    <div class="row">
-                        <div class="cell"><label path="email">Email: </label></div>
-                        <div class="cell"><input path="email"/></div>
-                    </div>
-                    <div class="row">
-                        <div class="cell"><label path="contact">Telephone: </label></div>
-                        <div class="cell"><input path="contact"/></div>
-                    </div>
-                    <div class="row">
-                        <div class="cell"><label path="message">Message: </label></div>
-                        <div class="cell"><textarea path="message"></textarea></div>
-                    </div>
-                    <div class="row">
-                        <div class="cell"><input type="submit" value="Submit"/></div>
-                    </div>
-                </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="footer effect">
-        <div class="table">
-            <div class="row">
-                <div class="cell"><a href="#about" class="button">About</a> </div>
-                <div class="cell"><a href="#portfolio" class="button">Portfolio</a> </div>
-                <div class="cell"><a href="#technologies" class="button">Technologies</a> </div>
-                <div class="cell"><a href="#testimonials" class="button">Testimonials</a> </div>
-                <div class="cell"><a href="#contactMe" class="button">ContactMe</a> </div>
-            </div>
-        </div>
-    </div>
+<div class="header effect"></div>
+<div class="contents">
+    <div class="about"></div>
+    <div class="portfolio accordion horizontal"></div>
+    <div class="technologies"></div>
+    <div class="testimonials"></div>
+    <div class="contactMe"></div>
+</div>
+<div class="footer effect">
+    <table class="table">
+        <tr class="row">
+            <td class="ccell"><a href="#about" class="button">About</a></td>
+            <td class="ccell"><a href="#portfolio" class="button">Portfolio</a></td>
+            <td class="ccell"><a href="#technologies" class="button">Technologies</a></td>
+            <td class="ccell"><a href="#testimonials" class="button">Testimonials</a></td>
+            <td class="ccell"><a href="#contactMe" class="button">ContactMe</a></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

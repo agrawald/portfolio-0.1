@@ -68,12 +68,9 @@ $(function(){
         template: $('#tTestimonials').html()
     });
 
-    var ContactMeView = Backbone.View.extend({
+    var ContactMeView = GenericView.extend({
         el: '.contactMe',
-        initialize: function(){
-        },
-        render: function(){
-        }
+        template: $('#tContactMe').html()
     });
 
     var PortfolioRouter = Backbone.Router.extend({
@@ -122,14 +119,12 @@ $(function(){
         {
             if(!_.isEmpty(this.v_shown))
             {
-                this.v_shown.el.style.display = 'none';
                 this.v_shown.$el.stop().animate({
                     left: '100%'
                 }, 1500);
             }
             this.v_shown = v_to_show;
             v_to_show.render();
-            v_to_show.el.style.display = "inline";
             v_to_show.$el.stop().animate({
                 'left': '.5%'
             }, 1500);

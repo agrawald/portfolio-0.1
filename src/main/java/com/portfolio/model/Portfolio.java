@@ -130,12 +130,12 @@ public class Portfolio {
             for (Organisation organisation : this.organisations) {
                 if (!CollectionUtils.isEmpty(organisation.getProjects())) {
                     for (Project project : organisation.getProjects()) {
-                        technologies.addAll(project.getTechnologies());
+                        for(Technology technology: project.getTechnologies())
+                            technologies.add(technology);
                     }
                 }
             }
         }
-
         return technologies;
     }
 

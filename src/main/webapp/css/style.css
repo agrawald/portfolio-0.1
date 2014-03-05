@@ -1,3 +1,181 @@
+.portfolio, .about, .technologies, .testimonials, .contactMe
+{
+    top: 13%;
+    width: 96%;
+    height:76.5%;
+    left: 100%;
+    position:fixed;
+    overflow-y: auto;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #414141;
+    color: white;
+    font-family: 'Bookman Old Style';
+    padding: 10px 20px;
+}
+
+.testimonials{
+    font-style: italic;
+    text-align: center;
+}
+
+.menu{
+    width:95%;
+    height:73%;
+}
+
+.technology{
+    width: 14%;
+}
+
+.link{
+    width: 32%;
+}
+/* --------- COLLAPSIBLE PANELS ----------*/
+/*Define Accordion box*/
+.accordion {
+    color:#474747;
+    background:#414141;
+    'margin:10px auto;
+    'padding:10px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.accordion section{
+    float:left;
+    overflow:hidden;
+    color:#333;
+    cursor:pointer;
+    background: #333;
+    margin:3px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.accordion section:hover {
+    background:#444;
+}
+
+.accordion section p {
+    display:none;
+    overflow-y: auto;
+}
+
+.accordion section:after{
+    position:relative;
+    font-size:10px;
+    color:black;
+}
+.accordion section:nth-child(1):after{ content:'1'; }
+.accordion section:nth-child(2):after{ content:'2'; }
+.accordion section:nth-child(3):after{ content:'3'; }
+.accordion section:nth-child(4):after{ content:'4'; }
+.accordion section:nth-child(5):after{ content:'5'; }
+
+.accordion section:target {
+    background:#FFF;
+    padding:10px;
+}
+.accordion section:target:hover {
+    background:#FFF;
+}
+.accordion section:target h2 {
+    width:73%;
+}
+.accordion section:target h2 a{
+    color:#333;
+    padding:0;
+}
+.accordion section:target p {
+    display:block;
+}
+.accordion section h2 a{
+    padding:8px 10px;
+    display:block;
+    font-size:1em;
+    font-weight:normal;
+    color:#eee;
+    text-decoration:none;
+}
+
+.accordion section div{
+    overflow: hidden;
+}
+
+.accordion section:target div {
+    overflow-y: auto;
+}
+
+.horizontal section{
+    width:2.5%;
+    height:inherit;
+    -moz-transition: width 0.2s ease-out;
+    -webkit-transition:width 0.2s ease-out;
+    -o-transition:width 0.2s ease-out;
+    transition:width 0.2s ease-out;
+}
+
+/*Position the number of the slide*/
+.horizontal section:after{
+    top:140px;
+    left:15px;
+}
+
+/*Header of closed slide*/
+.horizontal section h2 {
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width:240px;
+    position:relative;
+    left:-100px;
+    top:85px;
+}
+/*On mouse over open slide*/
+.horizontal :target{
+    width:50%;
+    height:97%;
+}
+.horizontal :target h2{
+    top:0px;
+    left:0;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.vertical section{
+    width:40%;
+    height:5%;
+    -webkit-transition:height 0.2s ease-out;
+    -moz-transition:height 0.2s ease-out;
+    -o-transition:height 0.2s ease-out;
+    transition:height 0.2s ease-out;
+}
+
+/*Set height of the slide*/
+.vertical :target{
+    height:250px;
+    width:97%;
+}
+
+.vertical section h2 {
+    position:relative;
+    left:0;
+    top:-15px;
+}
+/*Set position of the number on the slide*/
+.vertical section:after{
+    top:-60px;
+    left:810px;
+}
+.vertical section:target:after{
+    left:-9999px;
+}
+
 .effect{
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
@@ -9,17 +187,15 @@
 
 .header, .footer{
     width:99%;
-    height:15%;
     position:fixed;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    overflow-y: auto;
-    background-color: firebrick;
+    background-color: #2F3133;
     color: white;
-    font-family: "Lucida Console" ;
+    font-family: "Bookman Old Style";
 }
 
-.button {
+.button, .technology, .link {
     display: block;
     background: firebrick;
     padding: 10px;
@@ -27,49 +203,69 @@
     border-radius: 5px;
     color: white;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.button{
+    width: 50%;
+}
+
+.wider{
+   letter-spacing: 10px;
 }
 
 .header{
     top: .5%;
+    height: 11%;
 }
 
 .footer{
-    top: 94%;
+    top: 93%;
     height: 5%;
+    width: 98%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.footer table{
+    padding: 0px;
 }
 
 .table{
-    display: table;
     width: 100%;
     text-align: center;
+    padding: 10px 20px;
 }
 
 .row{
-    display: table-row;
-    width: 100%;
     text-align: center;
+    width: 99%;
 }
 
-.cell{
-    display: table-cell;
+.cell, .ccell, .lcell, .rcell{
     width: 20%;
     height: 100%;
-    align-items: center;
-    text-align: center;
     margin-top: 10px;
 }
 
-.portfolio, .about, .technologies, .testimonials, .contactMe
-{
-    top: 16%;
-    width: 99%;
-    height:77%;
-    left: 100%;
-    position:fixed;
-    overflow-y: auto;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    background-color: #2F3133;
-    color: white;
-    font-family: 'Lucida Console', monospace;
+.ccell{
+    text-align: -webkit-center;
+}
+
+.rcell{
+    text-align: -webkit-right;
+}
+
+.lcell{
+    text-align: -webkit-left;
+}
+
+.fixed {
+    color: #fff;
+    width: 20%;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    height:79%;
 }
