@@ -1,6 +1,6 @@
 .portfolio, .about, .technologies, .testimonials, .contactMe
 {
-    top: 13%;
+    top: 80px;
     width: 96%;
     height:76.5%;
     left: 100%;
@@ -29,7 +29,7 @@
 }
 
 .link{
-    width: 32%;
+    width: 200px;
 }
 /* --------- COLLAPSIBLE PANELS ----------*/
 /*Define Accordion box*/
@@ -198,7 +198,7 @@
 .button, .technology, .link {
     display: block;
     background: firebrick;
-    padding: 10px;
+    'padding: 10px;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -207,7 +207,7 @@
 }
 
 .button{
-    width: 50%;
+    width: 150px;
 }
 
 .wider{
@@ -216,12 +216,12 @@
 
 .header{
     top: .5%;
-    height: 11%;
+    height: 70px;
 }
 
 .footer{
-    top: 93%;
-    height: 5%;
+    bottom: 5px;
+    height: 20px;
     width: 98%;
     padding-left: 10px;
     padding-top: 5px;
