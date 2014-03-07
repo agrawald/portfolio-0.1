@@ -4902,10 +4902,10 @@
             // by a handler lower down the tree; reflect the correct value.
             this.isDefaultPrevented = src.defaultPrevented ||
                 src.defaultPrevented === undefined && (
+                    // Support: Android < 4.0
+                    src.getPreventDefault && src.getPreventDefault() ||
                     // Support: IE < 9
-                    src.returnValue === false ||
-                        // Support: Android < 4.0
-                        src.getPreventDefault && src.getPreventDefault() ) ?
+                    src.returnValue === false) ?
                 returnTrue :
                 returnFalse;
 

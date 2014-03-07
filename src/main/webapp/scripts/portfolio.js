@@ -32,6 +32,7 @@ $(function(){
             });
         },
         render: function(model){
+            $('#tabs').tabs();
             if(!_.isUndefined(model))
             {
                 console.log("In render" + model);
@@ -44,44 +45,44 @@ $(function(){
     });
 
     var PortfolioView = GenericView.extend({
-        el:'.portfolio',
+        el:'#portfolio',
         template: $('#tPortfolio').html()
     });
 
     var HeaderView = GenericView.extend({
-        el: '.header',
+        el: '#header',
         template: $('#tHeader').html()
     });
 
     var AboutView = GenericView.extend({
-        el: '.about',
+        el: '#about',
         template: $('#tAbout').html()
     });
 
     var TechnologiesView = GenericView.extend({
-        el: '.technologies',
+        el: '#technologies',
         template: $('#tTechnologies').html()
     });
 
     var TestimonialsView = GenericView.extend({
-        el: '.testimonials',
+        el: '#testimonials',
         template: $('#tTestimonials').html()
     });
 
     var ContactMeView = GenericView.extend({
-        el: '.contactMe',
+        el: '#contactMe',
         template: $('#tContactMe').html()
     });
 
     var PortfolioRouter = Backbone.Router.extend({
         routes:{
-            '':'about',
-            'about': 'about',
-            'portfolio': 'portfolio',
-            'technologies': 'technologies',
-            'testimonials': 'testimonials',
-            'contactMe': 'contactMe',
-            'download' : 'download'
+            //'':'about',
+            'click #rb-about': 'about',
+            'click input[id=rb-portfolio]': 'portfolio',
+            'click input[id=rb-technologies]': 'technologies',
+            'click input[id=rb-testimonials]': 'testimonials',
+            'click input[id=rb-contact_me]': 'contactMe',
+            'click input[id=rb-download]' : 'download'
         },
         v_shown: '',
         initialize: function(){
@@ -91,13 +92,23 @@ $(function(){
             this.testimonials();
             this.contactMe();
             this.v_shown=this.about();
+
+            $('#radioset').buttonset();
+            $('#rb-about').button();
+            $('#rb-portfolio').button();
+            $('#rb-technologies').button();
+            $('#rb-testimonials').button();
+            $('#rb-contact-me').button();
         },
         header: function(){
             var v_header = new HeaderView();
             v_header.render();
+            $('#download').button();
+            $('#linkedInUrl').button();
             return v_header;
         },
         about: function(){
+            alert("Clicked about");
             return this.showView(new AboutView());
         },
         portfolio: function(){
@@ -126,7 +137,7 @@ $(function(){
             this.v_shown = v_to_show;
             v_to_show.render();
             v_to_show.$el.stop().animate({
-                'left': '.5%'
+                'left': '10px'
             }, 1500);
             return v_to_show;
         }
