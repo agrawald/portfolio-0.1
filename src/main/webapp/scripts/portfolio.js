@@ -76,16 +76,13 @@ $(function(){
 
     var PortfolioRouter = Backbone.Router.extend({
         routes:{
-            //'':'about',
-            'click #rb-about': 'about',
-            'click input[id=rb-portfolio]': 'portfolio',
-            'click input[id=rb-technologies]': 'technologies',
-            'click input[id=rb-testimonials]': 'testimonials',
-            'click input[id=rb-contact_me]': 'contactMe',
+            '': 'about',
+            'click input[type=radio]': 'about',
             'click input[id=rb-download]' : 'download'
         },
         v_shown: '',
         initialize: function(){
+            var _this = this;
             this.header();
             this.portfolio();
             this.technologies();
@@ -94,11 +91,27 @@ $(function(){
             this.v_shown=this.about();
 
             $('#radioset').buttonset();
-            $('#rb-about').button();
-            $('#rb-portfolio').button();
-            $('#rb-technologies').button();
-            $('#rb-testimonials').button();
-            $('#rb-contact-me').button();
+            $('#rb-about').button().click(function (event) {
+                return _this.about();
+            });
+            $('#rb-portfolio').button().click(function (event) {
+                return _this.portfolio();
+            });
+            $('#rb-technologies').button().click(function (event) {
+                return _this.technologies();
+            });
+            ;
+            $('#rb-testimonials').button().click(function (event) {
+                return _this.testimonials();
+            });
+            ;
+            $('#rb-contact-me').button().click(function (event) {
+                return _this.contactMe();
+            });
+            ;
+        },
+        submit: function (event) {
+            console.log(event);
         },
         header: function(){
             var v_header = new HeaderView();
@@ -108,7 +121,6 @@ $(function(){
             return v_header;
         },
         about: function(){
-            alert("Clicked about");
             return this.showView(new AboutView());
         },
         portfolio: function(){

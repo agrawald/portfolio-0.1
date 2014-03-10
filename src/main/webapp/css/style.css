@@ -1,17 +1,15 @@
 #portfolio, #about, #technologies, #testimonials, #contactMe
 {
-    width: 96%;
-    height:82%;
     left: 100%;
-    position:fixed;
     -moz-border-radius: 15px;
     border-radius: 15px;
     background-color: #414141;
     color: white;
-    font-family: 'Bookman Old Style';
     padding: 10px 20px;
-    top:110px;
-    display: block;
+    position: fixed;
+    width: 100%;
+    overflow: -web;
+    height: 100%;
 }
 
 #testimonials{
@@ -19,18 +17,13 @@
     text-align: center;
 }
 
-.footer{
-    bottom: 35px;
-    height: 25px;
-    width: 98%;
-    padding-top: 5px;
-    position: fixed;
-}
-
 body{
     background-color:#333;
     color: white;
     font-family: "Lucida Console";
+    margin: 8px;
+    overflow-y: auto;
+
 }
 
 table{

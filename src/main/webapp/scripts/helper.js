@@ -45,9 +45,9 @@ Handlebars.registerHelper('tabs', function(organisations, options){
             "class='ui-tabs-panel ui-widget-content ui-corner-bottom' role='tabpanel' ";
 
         if(i==0)
-            out+="aria-expanded='true' aria-hidden='false' style='display: block;'>";
+            out += "aria-expanded='true' aria-hidden='false' style='display: block;overflow: auto;'>";
         else
-            out+="aria-expanded='false' aria-hidden='true' style='display: none;'>"
+            out += "aria-expanded='false' aria-hidden='true' style='display: none;overflow: auto;'>"
 
         out+=options.fn(organisations[i])+"</div>";
     }
