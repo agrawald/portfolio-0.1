@@ -1,6 +1,6 @@
 Portfolio
 =============
-Portfolio is a full web application created using following technologies
+Portfolio is a maven web application created using following technologies
 
 Frontend technologies used...
 --------------
@@ -16,3 +16,8 @@ Backend technologies used...
 Database used...
 --------------
 1. MongoDB
+
+Server Used...
+------------
+1. Tomcat
+
