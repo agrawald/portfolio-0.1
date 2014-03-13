@@ -7,6 +7,14 @@ $(function(){
         }
     });
 
+    var ContactMe = Backbone.Model.extend({
+        urlRoot: 'http://localhost:8080/api/contact/dagrawal',
+        idAttribute: 'id',
+        url: function(){
+            return this.urlRoot;
+        }
+    });
+
     var PortfolioCollection = Backbone.Collection.extend({
         userId: 'dagrawal',
         model: Portfolio,
@@ -32,7 +40,6 @@ $(function(){
             });
         },
         render: function(model){
-            $('#tabs').tabs();
             if(!_.isUndefined(model))
             {
                 console.log("In render" + model);
@@ -40,6 +47,9 @@ $(function(){
                 var html = hb_template(model.toJSON());
                 this.$el.html(html);
             }
+            $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+            $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
             return this;
         }
     });
@@ -71,23 +81,35 @@ $(function(){
 
     var ContactMeView = GenericView.extend({
         el: '#contactMe',
-        template: $('#tContactMe').html()
+        template: $('#tContactMe').html(),
+        render: function(model){
+            var _this = GenericView.prototype.render.call(this);
+            $('#submit').button().click(function (event) {
+                return this.submit(event);
+            });
+            return _this;
+        },
+        submit: function (event) {
+            console.log(event);
+            event.preventDefault();
+            var contactme = new ContactMe();
+            contactme.create({
+                name: $('#name').value(),
+                email: $('#email').value(),
+                contact: $('#contact').value(),
+                message: $('#message').value()
+            });
+        }
     });
 
     var PortfolioRouter = Backbone.Router.extend({
         routes:{
-            '': 'about',
-            'click input[type=radio]': 'about',
-            'click input[id=rb-download]' : 'download'
+            '': 'about'
         },
         v_shown: '',
         initialize: function(){
             var _this = this;
             this.header();
-            this.portfolio();
-            this.technologies();
-            this.testimonials();
-            this.contactMe();
             this.v_shown=this.about();
 
             $('#radioset').buttonset();
@@ -108,10 +130,6 @@ $(function(){
             $('#rb-contact-me').button().click(function (event) {
                 return _this.contactMe();
             });
-            ;
-        },
-        submit: function (event) {
-            console.log(event);
         },
         header: function(){
             var v_header = new HeaderView();
@@ -142,14 +160,14 @@ $(function(){
         {
             if(!_.isEmpty(this.v_shown))
             {
-                this.v_shown.$el.stop().animate({
-                    left: '100%'
-                }, 1500);
+              this.v_shown.$el.stop().animate({
+                  top: '100%'
+              }, 1500);
             }
             this.v_shown = v_to_show;
             v_to_show.render();
             v_to_show.$el.stop().animate({
-                'left': '10px'
+                'top': '120px'
             }, 1500);
             return v_to_show;
         }

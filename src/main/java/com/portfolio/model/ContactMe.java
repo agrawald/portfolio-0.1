@@ -11,17 +11,23 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class ContactMe {
     @Id
     private String id;
+    private String userId;
+    private String name;
+    private String contact;
+    private String email;
+    private String message;
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
-                .append("id", id)
-                .append("userId", userId)
-                .append("name", name)
-                .append("contact", contact)
-                .append("email", email)
-                .append("message", message)
-                .toString();
+        final StringBuilder sb = new StringBuilder("ContactMe{");
+        sb.append("id='").append(id).append('\'');
+        sb.append(", userId='").append(userId).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", contact='").append(contact).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", message='").append(message).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 
     public String getId() {
@@ -31,12 +37,6 @@ public class ContactMe {
     public void setId(String id) {
         this.id = id;
     }
-
-    private String userId;
-    private String name;
-    private String contact;
-    private String email;
-    private String message;
 
     @Override
     public boolean equals(Object o) {

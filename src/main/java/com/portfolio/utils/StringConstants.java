@@ -24,7 +24,7 @@ public interface StringConstants {
     String PATH_INDEX = "/";
     String PATH_ABOUT = "/about/{"+P_USERID+"}";
     String PATH_PORTFOLIO = "/portfolio/{"+P_USERID+"}";
-    String PATH_CONTACT_ME = "/contactMe/{"+P_USERID+"}";
+    String PATH_CONTACT_ME = "/contact/{"+P_USERID+"}";
     String PATH_ALL_TESTIMONIAL = "/allTestimonial/{"+P_USERID+"}";
     String PATH_ALL_TECHNOLOGIES = "/allTechnologies/{"+P_USERID+"}";
 

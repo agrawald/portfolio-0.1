@@ -1,15 +1,31 @@
+html{
+    max-height: 640px;
+    overflow-y: auto;
+}
+.wrapper{
+    width: 1024px;
+}
+
+#title{
+    top: 50px;
+    height: 50px;
+    background-color: #000000;
+}
+
 #portfolio, #about, #technologies, #testimonials, #contactMe
 {
-    left: 100%;
+    top: 100%;
     -moz-border-radius: 15px;
     border-radius: 15px;
     background-color: #414141;
     color: white;
     padding: 10px 20px;
     position: fixed;
-    width: 100%;
-    overflow: -web;
-    height: 100%;
+    width: 1024px;
+}
+
+.hidden{
+    display: hidden;
 }
 
 #testimonials{
@@ -21,19 +37,11 @@ body{
     background-color:#333;
     color: white;
     font-family: "Lucida Console";
-    margin: 8px;
-    overflow-y: auto;
-
-}
-
-table{
-    width: 100%;
 }
 
 .wider{
     letter-spacing: 10px;
 }
-
 
 .left{
     text-align: -webkit-left;
@@ -53,15 +61,15 @@ table{
     overflow-y: auto;
 }
 
-.title{
-    letter-spacing: 10px;
-    color: white;
-    font-size: 2em;
+#tabs div{
+    max-height: 620px;
+    overflow-y: auto;
 }
 
-.header{
-    background-color: black;
-    padding: 5px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+.fixed{
+    position: fixed;
+}
+
+#radioset{
+    top:75px;
 }

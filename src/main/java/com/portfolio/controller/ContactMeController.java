@@ -1,6 +1,7 @@
 package com.portfolio.controller;
 
 import com.portfolio.exception.ApplicationException;
+import com.portfolio.model.Contact;
 import com.portfolio.model.ContactMe;
 import com.portfolio.model.Portfolio;
 import com.portfolio.service.ContactMeSvc;
@@ -31,12 +32,17 @@ public class ContactMeController extends GenericController {
     }
 
     @RequestMapping(value = StringConstants.PATH_CONTACT_ME, method = RequestMethod.POST)
-    public ModelAndView post(@ModelAttribute(StringConstants.P_CONTACT_ME) ContactMe pContactMe, @PathVariable String pUserId) {
-        ModelAndView modelAndView = new ModelAndView("contactMe.htm");
-        contactMeSvc.add(pContactMe);
+    public ModelAndView post(@RequestBody ContactMe pContactMe, @PathVariable String pUserId) {
+        ModelAndView modelAndView = new ModelAndView("contactMe");
+//        contactMeSvc.add(pContactMe);
         Portfolio portfolio = portfolioSvc.get(pUserId);
-        modelAndView.addObject(StringConstants.P_CONTACT_ME, portfolio.getContactMe());
-        modelAndView.addObject(StringConstants.P_COMMAND, new ContactMe());
+        try {
+            modelAndView.addObject(StringConstants.P_CONTACT_ME, jsonUtils.toJson(portfolio.getContactMe()));
+            modelAndView.addObject(StringConstants.P_COMMAND, new ContactMe());
+        } catch (ApplicationException e) {
+            modelAndView = errorPage(e);
+        }
         return modelAndView;
     }
+
 }
