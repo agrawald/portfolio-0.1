@@ -14,7 +14,7 @@
     <script src="scripts/portfolio.js"></script>
 
     <script id="tHeader" type="text/template">
-        <table>
+        <table class="left">
             <tr>
                 <td class="wider left">
                     <h3>{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</h3>
@@ -25,13 +25,26 @@
                     <!--{{/contact}}-->
                 <!--</td>-->
                 <td class="right">
-                    <button id="download"
-                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                    <div id="radioset" class="ui-buttonset">
+                    <button id="linkedInUrl"
+                            class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
                             role="button"
-                            aria-disabled="false">
-                        <span class="ui-button-text"><a href="{{user.linkedInUrl}}" class="link">Let's
-                            linked-in</a></span>
+                            aria-disabled="false"
+                            title="Let's Linked In">
+                        <span class="ui-button-text">
+                            <a href="{{user.linkedInUrl}}" class="link" target="_blank"><img src="ico/linkedin.png"></a>
+                        </span>
                     </button>
+                    <button id="download"
+                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
+                            role="button"
+                            aria-disabled="false"
+                            title="Download CV">
+                        <span class="ui-button-text">
+                            <a href="/api/download/{{user.userId}}" class="link" target="_self"><img src="ico/go_down.png"></a>
+                        </span>
+                    </button>
+                    </div>
                 </td>
             </tr>
 
@@ -119,58 +132,56 @@
         </table>
     </script>
 </head>
-<body class="center" style="overflow-y: auto">
+<body class="center">
 <div class="wrapper center">
-    <div id="header" class="title"></div>
-    <div id="radioset" class="ui-buttonset">
-        <input type="radio" id="rb-about" name="radio" checked="checked" class="ui-helper-hidden-accessible"
-               value="about">
-        <label for="rb-about"
-               class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left"
-               role="button" aria-disabled="false">
-            <span class="ui-button-text">About</span>
-        </label>
+    <table class="left">
+        <tr>
+            <td><div id="header" class="title"></div></td>
+            <td><div id="radioset" class="ui-buttonset">
+                <input type="radio" id="rb-about" name="radio" checked="checked" class="ui-helper-hidden-accessible"
+                       value="about">
+                <label for="rb-about"
+                       class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left"
+                       role="button" aria-disabled="false" title="About me">
+                    <span class="ui-button-text"><img src="ico/message_information.png"></span>
+                </label>
 
-        <input type="radio" id="rb-portfolio" name="radio" class="ui-helper-hidden-accessible">
-        <label for="rb-portfolio" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button"
-               aria-disabled="false">
-            <span class="ui-button-text">Portfolio</span>
-        </label>
+                <input type="radio" id="rb-portfolio" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-portfolio" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button"
+                       aria-disabled="false"  title="My Portfolio">
+                    <span class="ui-button-text"><img src="ico/portfolio.png"></span>
+                </label>
 
-        <input type="radio" id="rb-technologies" name="radio" class="ui-helper-hidden-accessible">
-        <label for="rb-technologies" class="ui-button ui-widget ui-state-default ui-button-text-only"
-               role="button"
-               aria-disabled="false">
-            <span class="ui-button-text">Technologies</span>
-        </label>
+                <input type="radio" id="rb-technologies" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-technologies" class="ui-button ui-widget ui-state-default ui-button-text-only"
+                       role="button"
+                       aria-disabled="false"  title="Skills">
+                    <span class="ui-button-text"><img src="ico/high_technology_idisk.png"></span>
+                </label>
 
-        <input type="radio" id="rb-testimonials" name="radio" class="ui-helper-hidden-accessible">
-        <label for="rb-testimonials" class="ui-button ui-widget ui-state-default ui-button-text-only"
-               role="button"
-               aria-disabled="false">
-            <span class="ui-button-text">Testimonials</span>
-        </label>
+                <input type="radio" id="rb-testimonials" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-testimonials" class="ui-button ui-widget ui-state-default ui-button-text-only"
+                       role="button"
+                       aria-disabled="false" title="Testimonials">
+                    <span class="ui-button-text"><img src="ico/thumbs_up.png"></span>
+                </label>
 
-        <input type="radio" id="rb-contact-me" name="radio" class="ui-helper-hidden-accessible">
-        <label for="rb-contact-me"
-               class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right"
-               role="button" aria-disabled="false">
-            <span class="ui-button-text">Contact Me</span>
-        </label>
+                <input type="radio" id="rb-contact-me" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-contact-me"
+                       class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right"
+                       role="button" aria-disabled="false"  title="Contact Me">
+                    <span class="ui-button-text"><img src="ico/contact.png"></span>
+                </label>
 
-
-        <input type="radio" id="rb-resume" name="radio" class="ui-helper-hidden-accessible">
-        <label for="rb-resume" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right"
-               role="button" aria-disabled="false">
-            <span class="ui-button-text">Download Resume</span>
-        </label>
-    </div>
+            </div></td>
+        </tr>
+    </table>
     <div class="left">
         <div id="about"></div>
         <div id="portfolio"></div>
         <div id="technologies"></div>
         <div id="testimonials"></div>
-        <div id="contactMe"></div>
+        <div id="contactMe" class="center"></div>
     </div>
 </div>
 

@@ -27,17 +27,21 @@ $(function(){
     });
 
     var GenericView = Backbone.View.extend({
+        collections: new PortfolioCollection(),
         initialize: function(){
             var _this = this;
-            var collection= new PortfolioCollection();
-            collection.fetch({
+            this.collections.fetch({
                 success: function(collection){
-                    _.each(collection.models, function(model){
-                        if(model.attributes.enabled)
-                            _this.render(model)
-                    })
+                    _this.onSuccessHandler(collection);
                 }
             });
+        },
+        onSuccessHandler: function(collection){
+            var _this = this;
+            _.each(collection.models, function(model){
+                if(model.attributes.enabled)
+                    _this.render(model)
+            })
         },
         render: function(model){
             if(!_.isUndefined(model))
@@ -47,8 +51,6 @@ $(function(){
                 var html = hb_template(model.toJSON());
                 this.$el.html(html);
             }
-            $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-            $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 
             return this;
         }
@@ -56,12 +58,30 @@ $(function(){
 
     var PortfolioView = GenericView.extend({
         el:'#portfolio',
-        template: $('#tPortfolio').html()
+        template: $('#tPortfolio').html(),
+        render: function(model){
+            var _this = GenericView.prototype.render.call(this, model);
+            this.addHandlers();
+            return _this;
+        },
+        addHandlers:function(){
+            $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+            $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+        }
     });
 
     var HeaderView = GenericView.extend({
         el: '#header',
-        template: $('#tHeader').html()
+        template: $('#tHeader').html(),
+        render:function(model){
+            var _this = GenericView.prototype.render.call(this, model);
+            this.addHandlers();
+            return _this;
+        },
+        addHandlers: function(){
+            $('#download').button();
+            $('#linkedInUrl').button();
+        }
     });
 
     var AboutView = GenericView.extend({
@@ -83,21 +103,25 @@ $(function(){
         el: '#contactMe',
         template: $('#tContactMe').html(),
         render: function(model){
-            var _this = GenericView.prototype.render.call(this);
-            $('#submit').button().click(function (event) {
-                return this.submit(event);
-            });
+            var _this = GenericView.prototype.render.call(this, model);
+            this.addHandlers();
             return _this;
         },
         submit: function (event) {
             console.log(event);
             event.preventDefault();
             var contactme = new ContactMe();
-            contactme.create({
-                name: $('#name').value(),
-                email: $('#email').value(),
-                contact: $('#contact').value(),
-                message: $('#message').value()
+            contactme.save({
+                name: $('#name').val(),
+                email: $('#email').val(),
+                contact: $('#contact').val(),
+                message: $('#message').val()
+            });
+        },
+        addHandlers: function(){
+            var _this = this;
+            $('#submit').button().click(function (event) {
+                return _this.submit(event);
             });
         }
     });
@@ -108,10 +132,12 @@ $(function(){
         },
         v_shown: '',
         initialize: function(){
-            var _this = this;
             this.header();
             this.v_shown=this.about();
-
+            this.addHandlers();
+        },
+        addHandlers: function(){
+            var _this = this;
             $('#radioset').buttonset();
             $('#rb-about').button().click(function (event) {
                 return _this.about();
@@ -134,8 +160,6 @@ $(function(){
         header: function(){
             var v_header = new HeaderView();
             v_header.render();
-            $('#download').button();
-            $('#linkedInUrl').button();
             return v_header;
         },
         about: function(){
@@ -153,22 +177,21 @@ $(function(){
         contactMe: function(){
             return this.showView(new ContactMeView());
         },
-        download: function(){
-            //TODO
-        },
         showView: function(v_to_show)
         {
             if(!_.isEmpty(this.v_shown))
             {
+              this.v_shown.el.style.display='none';
               this.v_shown.$el.stop().animate({
                   top: '100%'
               }, 1500);
             }
             this.v_shown = v_to_show;
             v_to_show.render();
+            v_to_show.el.style.display = "block";
             v_to_show.$el.stop().animate({
-                'top': '120px'
-            }, 1500);
+                'top': '80px'
+            }, 1500,"easeOutQuart");
             return v_to_show;
         }
     });

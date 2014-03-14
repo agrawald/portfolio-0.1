@@ -1,6 +1,6 @@
 html{
     max-height: 640px;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .wrapper{
     width: 1024px;
@@ -20,8 +20,13 @@ html{
     background-color: #414141;
     color: white;
     padding: 10px 20px;
-    position: fixed;
+    position: absolute;
     width: 1024px;
+    display: none;
+}
+
+#about{
+    display: block;
 }
 
 .hidden{
@@ -58,11 +63,6 @@ body{
 #tabs
 {
     height: 97%;
-    overflow-y: auto;
-}
-
-#tabs div{
-    max-height: 620px;
     overflow-y: auto;
 }
 
