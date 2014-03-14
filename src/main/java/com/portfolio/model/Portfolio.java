@@ -3,12 +3,13 @@ package com.portfolio.model;
 import com.portfolio.exception.ApplicationException;
 import com.portfolio.exception.ErrorCode;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Created by e7006722 on 25/02/14.
@@ -21,22 +22,32 @@ public class Portfolio {
     private List<Organisation> organisations = new ArrayList<Organisation>();
     private List<Technology> allTechnologies = new ArrayList<Technology>();
     private List<Testimonial> allTestimonials = new ArrayList<Testimonial>();
+    private List<Project> personalProjects = new ArrayList<Project>();
     private boolean enabled = false;
     private String about;
     private String contactMe;
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
-                .append("id", id)
-                .append("user", user)
-                .append("organisations", organisations)
-                .append("allTechnologies", allTechnologies)
-                .append("allTestimonials", allTestimonials)
-                .append("enabled", enabled)
-                .append("about", about)
-                .append("contactMe", contactMe)
-                .toString();
+        return "Portfolio{" +
+                "id='" + id + '\'' +
+                ", user=" + user +
+                ", organisations=" + organisations +
+                ", allTechnologies=" + allTechnologies +
+                ", allTestimonials=" + allTestimonials +
+                ", personalProjects=" + personalProjects +
+                ", enabled=" + enabled +
+                ", about='" + about + '\'' +
+                ", contactMe='" + contactMe + '\'' +
+                '}';
+    }
+
+    public List<Project> getPersonalProjects() {
+        return personalProjects;
+    }
+
+    public void setPersonalProjects(List<Project> personalProjects) {
+        this.personalProjects = personalProjects;
     }
 
     public String getContactMe() {
@@ -130,7 +141,7 @@ public class Portfolio {
             for (Organisation organisation : this.organisations) {
                 if (!CollectionUtils.isEmpty(organisation.getProjects())) {
                     for (Project project : organisation.getProjects()) {
-                        for(Technology technology: project.getTechnologies())
+                        for (Technology technology : project.getTechnologies())
                             technologies.add(technology);
                     }
                 }

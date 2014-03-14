@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by e7006722 on 25/02/14.
  */
-public class GenericDao<T> {
+public abstract class GenericDao<T> {
 
     private static ApplicationContext ctx =
             new AnnotationConfigApplicationContext(AppConfig.class);
@@ -34,12 +34,12 @@ public class GenericDao<T> {
         mongoOperations.remove(qry, clazz);
     }
 
-    protected List<T> find(Class<T> clazz, Criteria criteria){
+    protected List<T> find(Class<T> clazz, Criteria criteria) {
         Query qry = new Query(criteria);
         return mongoOperations.find(qry, clazz);
     }
 
-    protected List<T> findAll(Class<T> clazz){
+    protected List<T> findAll(Class<T> clazz) {
         return mongoOperations.findAll(clazz);
     }
 

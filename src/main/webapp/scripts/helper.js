@@ -6,12 +6,38 @@ Handlebars.registerHelper('list', function(items, options) {
 
     for(var i=0, l=items.length; i<l; i++) {
         if(options.fn(items[i]) == "")
-            out = out + "<li class='file'>" + items[i] + "</li>";
+            out = out + "<li>" + items[i] + "</li>";
         else
-            out = out + "<li class='file'>" + options.fn(items[i]) + "</li>";
+            out = out + "<li>" + options.fn(items[i]) + "</li>";
     }
 
     return out + "</ol>";
+});
+
+Handlebars.registerHelper('projectTech', function (items) {
+    var out = "";
+
+    for (var i = 0, l = items.length; i < l; i++) {
+        out = out + items[i].name;
+        if (i != l - 1)
+            out += ", ";
+    }
+
+    return out;
+});
+
+
+Handlebars.registerHelper('technology', function (items, options) {
+    var out = "";
+
+    for (var i = 0, l = items.length; i < l; i++) {
+        if (options.fn(items[i]) == "")
+            out = out + " " + items[i] + " ";
+        else
+            out = out + " " + options.fn(items[i]) + " ";
+    }
+
+    return out;
 });
 
 Handlebars.registerHelper('fullName', function(user, options) {

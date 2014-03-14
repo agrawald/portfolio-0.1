@@ -33,15 +33,11 @@ html{
     display: hidden;
 }
 
-#testimonials{
-    font-style: italic;
-    text-align: center;
-}
 
 body{
     background-color:#333;
     color: white;
-    font-family: "Lucida Console";
+    font-family: Segoe UI, Arial, sans-serif;
 }
 
 .wider{
@@ -58,6 +54,20 @@ body{
 
 .center{
     text-align: -webkit-center;
+}
+
+.technology {
+    background-color: #555555;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 15px;
+    width: auto;
+    float: left;
+    margin: 2px 5px;
+}
+
+.technology:hover {
+    background-color: #414141;
 }
 
 #tabs

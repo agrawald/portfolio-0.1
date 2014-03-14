@@ -51,9 +51,11 @@
         </table>
     </script>
     <script id="tAbout" type="text/template">
-        <p style="text-align: justify">{{user.about}} This is dummy tezt</p>
+        <h2>About me...</h2>
+        <p style="text-align: justify">{{user.about}}</p>
     </script>
     <script id="tPortfolio" type="text/template">
+        <h2>Portfolio</h2>
         <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
             {{#tabs organisations}}
             <p>{{designation}} - ({{startDt}}-{{endDt}})
@@ -65,22 +67,33 @@
             <h4>Responsibilities</h4>
             {{#list responsibilities}}{{/list}}
             <h4>Technologies</h4>
-            {{#list technologies}} {{name}} {{experience}} {{/list}}
+
+            <div>{{#projectTech technologies}} {{/projectTech}}</div>
             {{/list}}
             </p>
             {{/tabs}}
         </div>
     </script>
     <script id="tTechnologies" type="text/template">
-        {{#each allTechnologies}}
-        <p class="technology">{{name}}</p>
-        {{/each}}
+        <h2>Skill Set</h2>
+        {{#technology allTechnologies}}
+        <div class="technology">{{name}}</div>
+        {{/technology}}
     </script>
     <script id="tTestimonials" type="text/template">
-        {{#each allTestimonials}}
-        <p>"{{description}}"</p>
-        <p>-{{project}}</p>
-        {{/each}}
+        <!--{{#each allTestimonials}}-->
+        <!--<p>"{{description}}"</p>-->
+        <!--<p>{{project}}</p>-->
+        <!--{{/each}}-->
+        <h2>Personal Projects</h2>
+        {{#list personalProjects}}
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+        <h4>Responsibilities</h4>
+        {{#list responsibilities}}{{/list}}
+        <h4>Technologies</h4>
+        <div>{{#projectTech technologies}} {{/projectTech}}</div>
+        {{/list}}
     </script>
     <script id="tContactMe" type="text/template">
         <table class="table">
