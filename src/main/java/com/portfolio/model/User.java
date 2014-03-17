@@ -1,7 +1,5 @@
 package com.portfolio.model;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-
 /**
  * Created by e7006722 on 25/02/14.
  */
