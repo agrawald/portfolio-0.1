@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="72440bec-1799-4d3f-aaca-f98e7d9c9d84" name="Default" comment="" />
-    <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="resolving Heroku build error" />
+    <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="resolving Heroku build error">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -898,7 +900,7 @@
       <deployment type="module" name="Portfolio">
         <settings>
           <option name="defaultDeploymentName" value="false" />
-          <option name="deploymentName" value="whispering-cliffs-8568" />
+          <option name="deploymentName" value="dagrawal" />
         </settings>
       </deployment>
       <RunnerSettings RunnerId="DeployToServer" />
@@ -1054,7 +1056,7 @@
       <workItem from="1394759784095" duration="12128000" />
       <workItem from="1394781892055" duration="19124000" />
       <workItem from="1395032419946" duration="134000" />
-      <workItem from="1395033111171" duration="555000" />
+      <workItem from="1395033111171" duration="1386000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1">
       <created>1393367731562</created>
@@ -1144,7 +1146,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199461000" />
+    <option name="totallyTimeSpent" value="200292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="46" width="1448" height="858" extended-state="6" />
