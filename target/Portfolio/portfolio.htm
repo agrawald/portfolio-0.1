@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery-ui.js"></script>
+    <script src="scripts/json.js"></script>
+    <script src="scripts/underscore.js"></script>
+    <script src="scripts/handlebars.js"></script>
+    <script src="scripts/backbone.js"></script>
+    <script src="scripts/helper.js"></script>
+    <script src="scripts/portfolio.js"></script>
+
+    <script id="tHeader" type="text/template">
+        <table class="left">
+            <tr>
+                <td class="wider left">
+                    <h3>{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</h3>
+                </td>
+                <!--<td class="right">-->
+                    <!--{{#contact user.contact}}-->
+                    <!--M:{{mobile}}&nbsp;H:{{phone}}-->
+                    <!--{{/contact}}-->
+                <!--</td>-->
+                <td class="right">
+                    <div id="radioset" class="ui-buttonset">
+                    <button id="linkedInUrl"
+                            class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
+                            role="button"
+                            aria-disabled="false"
+                            title="Let's Linked In">
+                        <span class="ui-button-text">
+                            <a href="{{user.linkedInUrl}}" class="link" target="_blank"><img src="ico/linkedin.png"></a>
+                        </span>
+                    </button>
+                    <button id="download"
+                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
+                            role="button"
+                            aria-disabled="false"
+                            title="Download CV">
+                        <span class="ui-button-text">
+                            <a href="/api/download/{{user.userId}}" class="link" target="_self"><img src="ico/go_down.png"></a>
+                        </span>
+                    </button>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </script>
+    <script id="tAbout" type="text/template">
+        <h2>About me...</h2>
+        <span class="about">{{escape user.about}}</span>
+    </script>
+    <script id="tPortfolio" type="text/template">
+        <h2>Portfolio</h2>
+        <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+            {{#tabs organisations}}
+            <p>{{designation}} - ({{startDt}}-{{endDt}})
+                {{#list projects}}
+
+            <h3>{{name}} - {{role}} - {{client}}</h3>
+
+            <p>{{description}}</p>
+            <h4>Responsibilities</h4>
+            {{#list responsibilities}}{{/list}}
+            <h4>Technologies</h4>
+
+            <div>{{#projectTech technologies}} {{/projectTech}}</div>
+            {{/list}}
+            </p>
+            {{/tabs}}
+        </div>
+    </script>
+    <script id="tTechnologies" type="text/template">
+        <h2>Skill Set</h2>
+        {{#technology allTechnologies}}
+        <div class="technology">{{name}}</div>
+        {{/technology}}
+    </script>
+    <script id="tTestimonials" type="text/template">
+        <!--{{#each allTestimonials}}-->
+        <!--<p>"{{description}}"</p>-->
+        <!--<p>{{project}}</p>-->
+        <!--{{/each}}-->
+        <h2>Personal Projects</h2>
+        {{#list personalProjects}}
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+        <h4>Responsibilities</h4>
+        {{#list responsibilities}}{{/list}}
+        <h4>Technologies</h4>
+        <div>{{#projectTech technologies}} {{/projectTech}}</div>
+        {{/list}}
+    </script>
+    <script id="tContactMe" type="text/template">
+        <table class="table">
+            <tr>
+                <td colspan="2" class="center"><h2>Contact Me</h2></td>
+            </tr>
+            <tr>
+                <td class="contact">{{contactMe}}</td>
+                <td>
+                    <form id="frmContact">
+                        <input type="hidden" id="userId" value="{{user.userId}}">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="right"><label path="name">Full Name: </label></td>
+                                <td class="left"><input path="name" id="name" class="ui-corner-all"/></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="right"><label path="email">Email: </label></td>
+                                <td class="left"><input path="email" id="email" class="ui-corner-all"/></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="right"><label path="contact">Telephone: </label></td>
+                                <td class="left"><input path="contact" id="contact" class="ui-corner-all"/></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="right"><label path="message">Message: </label></td>
+                                <td class="left"><textarea path="message" id="message" class="ui-corner-all"></textarea></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="right" colspan="2">
+                                    <button class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
+                                            role="button"
+                                            aria-disabled="false" type="reset">
+                                        <span class="ui-button-text">Clear</a></span>
+                                    </button>
+                                    <button id="submit"
+                                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
+                                            role="button"
+                                            aria-disabled="false" type="submit">
+                                        <span class="ui-button-text">Submit</a></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </script>
+    <script id="tDialog" type="text/template">
+        <p>{{escape code}}: {{escape message}}</p>
+    </script>
+</head>
+<body class="center">
+<div class="wrapper center">
+    <table class="left">
+        <tr>
+            <td><div id="header" class="title"></div></td>
+            <td><div id="radioset" class="ui-buttonset">
+                <input type="radio" id="rb-about" name="radio" checked="checked" class="ui-helper-hidden-accessible"
+                       value="about">
+                <label for="rb-about"
+                       class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left"
+                       role="button" aria-disabled="false" title="About me">
+                    <span class="ui-button-text"><img src="ico/message_information.png"></span>
+                </label>
+
+                <input type="radio" id="rb-portfolio" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-portfolio" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button"
+                       aria-disabled="false"  title="My Portfolio">
+                    <span class="ui-button-text"><img src="ico/portfolio.png"></span>
+                </label>
+
+                <input type="radio" id="rb-technologies" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-technologies" class="ui-button ui-widget ui-state-default ui-button-text-only"
+                       role="button"
+                       aria-disabled="false"  title="Skills">
+                    <span class="ui-button-text"><img src="ico/high_technology_idisk.png"></span>
+                </label>
+
+                <input type="radio" id="rb-testimonials" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-testimonials" class="ui-button ui-widget ui-state-default ui-button-text-only"
+                       role="button"
+                       aria-disabled="false" title="Testimonials">
+                    <span class="ui-button-text"><img src="ico/thumbs_up.png"></span>
+                </label>
+
+                <input type="radio" id="rb-contact-me" name="radio" class="ui-helper-hidden-accessible">
+                <label for="rb-contact-me"
+                       class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right"
+                       role="button" aria-disabled="false"  title="Contact Me">
+                    <span class="ui-button-text"><img src="ico/contact.png"></span>
+                </label>
+
+            </div></td>
+        </tr>
+    </table>
+    <div class="left">
+        <div id="about"></div>
+        <div id="portfolio"></div>
+        <div id="technologies"></div>
+        <div id="testimonials"></div>
+        <div id="contactMe" class="center"></div>
+    </div>
+    <div id="dialog" title="Message"></div>
+</div>
+
+</body>
+</html>
