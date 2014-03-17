@@ -3,6 +3,174 @@
   <component name="ChangeListManager">
     <list id="72440bec-1799-4d3f-aaca-f98e7d9c9d84" name="Default" comment="" />
     <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="Changed the db to eb a text file instead of mongo to install on heroku">
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio.war" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\META-INF\context.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\Dheeraj_Agrawal_CV.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\aspect\LoggingAspect.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\config\AppConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\controller\GenericController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\controller\PortfolioController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\dao\ContactMeDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\dao\GenericDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\dao\PortfolioDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\exception\ApplicationException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\mail\ApplicationMailer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Address.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Contact.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\ContactMe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Location.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Organisation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Portfolio.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Project.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Technology.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\Testimonial.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\service\ContactMeSvc.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\service\PortfolioSvc.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\service\impl\ContactMeSvcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\service\impl\PortfolioSvcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\utils\JsonUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\utils\StringConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\utils\enume\MessageCode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\utils\enume\StreetType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\com\portfolio\vo\ResponseVo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\classes\portfolio.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\asm-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\aspectjrt-1.6.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\aspectjweaver-1.6.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\cglib-2.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\commons-io-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\commons-lang-2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\commons-logging-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\jackson-core-asl-1.8.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\jackson-mapper-asl-1.8.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\jcl-over-slf4j-1.7.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\mail-1.5.0-b01.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\mockito-all-1.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\mongo-java-driver-2.11.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\org.apache.commons.collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\servlet-api-3.0-alpha-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\slf4j-api-1.7.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\slf4j-log4j12-1.7.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-aop-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-beans-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-context-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-context-support-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-core-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-data-commons-1.5.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-data-mongodb-1.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-expression-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-tx-3.1.4.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-web-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\lib\spring-webmvc-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\mvc-dispatcher-servlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\WEB-INF\web.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_flat_30_cccccc_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_flat_50_5c5c5c_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_glass_20_555555_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_glass_40_0078a3_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_glass_40_ffc73d_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_gloss-wave_25_333333_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_inset-soft_25_000000_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-bg_inset-soft_30_f58400_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-icons_4b8e0b_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-icons_a83300_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-icons_cccccc_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\images\ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\contact.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\go_down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\high_technology_idisk.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\linkedin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\message_information.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\portfolio.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\preferences_desktop_assistive_technology.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\ico\thumbs_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\portfolio.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\helper.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\jquery-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\json.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\portfolio.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\Portfolio\scripts\underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\Dheeraj_Agrawal_CV.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\aspect\LoggingAspect.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\config\AppConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\controller\GenericController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\controller\PortfolioController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\dao\ContactMeDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\dao\GenericDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\dao\PortfolioDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\exception\ApplicationException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\mail\ApplicationMailer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Address.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Contact.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\ContactMe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Location.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Organisation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Portfolio.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Project.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Technology.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\Testimonial.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\service\ContactMeSvc.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\service\PortfolioSvc.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\service\impl\ContactMeSvcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\service\impl\PortfolioSvcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\utils\JsonUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\utils\StringConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\utils\enume\MessageCode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\utils\enume\StreetType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\com\portfolio\vo\ResponseVo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\classes\portfolio.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\Dheeraj_Agrawal_CV.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\aspect\LoggingAspect.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\config\AppConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\controller\GenericController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\controller\PortfolioController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\dao\ContactMeDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\dao\GenericDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\dao\PortfolioDao.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\exception\ApplicationException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\mail\ApplicationMailer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Address.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Contact.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\ContactMe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Location.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Organisation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Portfolio.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Project.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Technology.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\Testimonial.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\service\ContactMeSvc.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\service\PortfolioSvc.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\service\impl\ContactMeSvcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\service\impl\PortfolioSvcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\utils\JsonUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\utils\StringConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\utils\enume\MessageCode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\utils\enume\StreetType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\com\portfolio\vo\ResponseVo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\min\classes\portfolio.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\test-classes\com\portfolio\AppTests.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\test-classes\com\portfolio\MockTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\test-classes\com\portfolio\SpringTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\e7006722\My Documents\GitHub\portfolio\target\test-classes\com\portfolio\dao\PortfolioDaoTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Portfolio.iws" />
@@ -108,11 +276,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="system.properties" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="system.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="463">
+            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="48" selection-start="883" selection-end="883" vertical-scroll-proportion="0.34587553" vertical-offset="217" max-vertical-offset="3534">
+              <folding>
+                <element signature="tag#build#0;tag#project#0" expanded="false" />
+                <element signature="tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,7 +365,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/helper.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/controller/ContactMeController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/mail/ApplicationMailer.java" />
@@ -201,6 +380,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/portfolio.json" />
         <option value="$PROJECT_DIR$/docs/portfolio.json" />
         <option value="$PROJECT_DIR$/system.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -229,9 +409,19 @@
           <option name="myItemId" value="Portfolio" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
+      </PATH>
+      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portfolio" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -242,6 +432,28 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="Portfolio" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dependency" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portfolio" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -1166,7 +1378,7 @@
       <workItem from="1394513306628" duration="196000" />
       <workItem from="1394680337728" duration="12510000" />
       <workItem from="1394759784095" duration="12128000" />
-      <workItem from="1394781892055" duration="18580000" />
+      <workItem from="1394781892055" duration="18840000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1">
       <created>1393367731562</created>
@@ -1248,11 +1460,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198228000" />
+    <option name="totallyTimeSpent" value="198488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="46" width="1448" height="858" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1265,9 +1477,9 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22955523" sideWeight="0.4988764" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38283378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.78746593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1277,7 +1489,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22222222" sideWeight="0.5011236" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1489,16 +1701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="46" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0" vertical-offset="502" max-vertical-offset="3648">
-          <folding>
-            <element signature="tag#build#0;tag#project#0" expanded="false" />
-            <element signature="tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="18" selection-start="383" selection-end="383" vertical-scroll-proportion="0.33248082" vertical-offset="193" max-vertical-offset="1596">
@@ -1699,6 +1901,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="679">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="48" selection-start="883" selection-end="883" vertical-scroll-proportion="0.34587553" vertical-offset="217" max-vertical-offset="3534">
+          <folding>
+            <element signature="tag#build#0;tag#project#0" expanded="false" />
+            <element signature="tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
