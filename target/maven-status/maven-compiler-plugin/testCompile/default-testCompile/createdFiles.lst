@@ -1,0 +1,4 @@
+com\portfolio\AppTests.class
+com\portfolio\SpringTest.class
+com\portfolio\MockTest.class
+com\portfolio\dao\PortfolioDaoTest.class
