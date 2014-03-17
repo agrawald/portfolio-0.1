@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list id="72440bec-1799-4d3f-aaca-f98e7d9c9d84" name="Default" comment="" />
     <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="Changed the db to eb a text file instead of mongo to install on heroku">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system.properties" afterPath="$PROJECT_DIR$/system.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Portfolio.iws" />
@@ -1167,7 +1166,7 @@
       <workItem from="1394513306628" duration="196000" />
       <workItem from="1394680337728" duration="12510000" />
       <workItem from="1394759784095" duration="12128000" />
-      <workItem from="1394781892055" duration="18566000" />
+      <workItem from="1394781892055" duration="18580000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1">
       <created>1393367731562</created>
@@ -1241,15 +1240,19 @@
       <created>1395030398596</created>
       <updated>1395030398596</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changed the db to eb a text file instead of mongo to install on heroku">
+      <created>1395031190758</created>
+      <updated>1395031190758</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198214000" />
+    <option name="totallyTimeSpent" value="198228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="46" width="1448" height="858" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
