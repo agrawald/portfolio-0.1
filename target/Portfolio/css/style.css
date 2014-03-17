@@ -1,0 +1,106 @@
+html{
+    max-height: 640px;
+    overflow-y: scroll;
+}
+.wrapper{
+    width: 1024px;
+}
+
+#title{
+    top: 50px;
+    height: 50px;
+    background-color: #000000;
+}
+
+#portfolio, #about, #technologies, #testimonials, #contactMe
+{
+    top: 100%;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #414141;
+    color: white;
+    padding: 20px 20px;
+    position: absolute;
+    width: 1024px;
+    display: none;
+    text-align: justify;
+}
+
+#about{
+    display: block;
+}
+
+.about{
+    text-align: justify;
+    font-size: 1em;
+
+}
+
+.hidden{
+    display: hidden;
+}
+
+.contact{
+    border-right: solid;
+    border-right-color: firebrick;
+    width: 500px;
+    vertical-align: top;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+
+body{
+    background-color:#333;
+    color: white;
+    font-family: Segoe UI, Arial, sans-serif;
+}
+
+table{
+    width: 100%;
+}
+
+.wider{
+    letter-spacing: 10px;
+}
+
+.left{
+    text-align: -webkit-left;
+}
+
+.right{
+    text-align: -webkit-right;
+}
+
+.center{
+    text-align: -webkit-center;
+}
+
+.technology {
+    background-color: #555555;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 15px;
+    width: auto;
+    float: left;
+    margin: 2px 5px;
+}
+
+.technology:hover {
+    background-color: #414141;
+}
+
+#tabs
+{
+    height: 97%;
+    overflow-y: auto;
+}
+
+.fixed{
+    position: fixed;
+}
+
+#radioset{
+    top:75px;
+    text-align: -webkit-right;
+}

@@ -1,16 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.portfolio.AppTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 14.219 sec <<< FAILURE! - in com.portfolio.AppTests
-portfolio(com.portfolio.AppTests)  Time elapsed: 13.438 sec  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
-	at org.springframework.test.web.servlet.result.StatusResultMatchers$5.match(StatusResultMatchers.java:546)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
-	at com.portfolio.AppTests.portfolio(AppTests.java:35)
-
-contact(com.portfolio.AppTests)  Time elapsed: 0.046 sec  <<< FAILURE!
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 6 sec <<< FAILURE! - in com.portfolio.AppTests
+contact(com.portfolio.AppTests)  Time elapsed: 5.641 sec  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
@@ -18,15 +10,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
 	at com.portfolio.AppTests.contact(AppTests.java:28)
 
-testimonial(com.portfolio.AppTests)  Time elapsed: 0.047 sec  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
-	at org.springframework.test.web.servlet.result.StatusResultMatchers$5.match(StatusResultMatchers.java:546)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
-	at com.portfolio.AppTests.testimonial(AppTests.java:42)
-
-about(com.portfolio.AppTests)  Time elapsed: 0.063 sec  <<< FAILURE!
+about(com.portfolio.AppTests)  Time elapsed: 0.047 sec  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
@@ -34,7 +18,23 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
 	at com.portfolio.AppTests.about(AppTests.java:21)
 
-index(com.portfolio.AppTests)  Time elapsed: 0.047 sec  <<< FAILURE!
+portfolio(com.portfolio.AppTests)  Time elapsed: 0.046 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$5.match(StatusResultMatchers.java:546)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
+	at com.portfolio.AppTests.portfolio(AppTests.java:35)
+
+testimonial(com.portfolio.AppTests)  Time elapsed: 0.079 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$5.match(StatusResultMatchers.java:546)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
+	at com.portfolio.AppTests.testimonial(AppTests.java:42)
+
+index(com.portfolio.AppTests)  Time elapsed: 0.031 sec  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
