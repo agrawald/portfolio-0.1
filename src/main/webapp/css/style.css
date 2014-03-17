@@ -19,18 +19,34 @@ html{
     border-radius: 15px;
     background-color: #414141;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 20px;
     position: absolute;
     width: 1024px;
     display: none;
+    text-align: justify;
 }
 
 #about{
     display: block;
 }
 
+.about{
+    text-align: justify;
+    font-size: 1em;
+
+}
+
 .hidden{
     display: hidden;
+}
+
+.contact{
+    border-right: solid;
+    border-right-color: firebrick;
+    width: 500px;
+    vertical-align: top;
+    text-align: left;
+    padding: 10px 20px;
 }
 
 
@@ -38,6 +54,10 @@ body{
     background-color:#333;
     color: white;
     font-family: Segoe UI, Arial, sans-serif;
+}
+
+table{
+    width: 100%;
 }
 
 .wider{
@@ -82,4 +102,5 @@ body{
 
 #radioset{
     top:75px;
+    text-align: -webkit-right;
 }

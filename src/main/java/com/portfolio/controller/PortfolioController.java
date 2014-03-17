@@ -1,14 +1,19 @@
 package com.portfolio.controller;
 
 import com.portfolio.exception.ApplicationException;
+import com.portfolio.model.ContactMe;
 import com.portfolio.model.Portfolio;
+import com.portfolio.utils.JsonUtils;
 import com.portfolio.utils.StringConstants;
+import com.portfolio.utils.enume.ErrorCode;
+import com.portfolio.vo.PortfolioVo;
 import org.apache.commons.io.IOUtils;
 import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -50,21 +55,14 @@ public class PortfolioController extends GenericController {
         }
     }
 
-    @RequestMapping(value = {StringConstants.PATH_PORTFOLIO},
-            method = RequestMethod.DELETE)
-    public ResponseEntity<String> delete(@PathVariable String pUserId) {
-        portfolioSvc.remove(pUserId);
-        return new ResponseEntity<String>("Portfolio deleted successfully!", HttpStatus.OK);
-    }
-
-    @RequestMapping(value = {StringConstants.PATH_PORTFOLIO},
-            method = {RequestMethod.PUT, RequestMethod.POST})
-    public ResponseEntity<String> save(@ModelAttribute("portfolio") Portfolio pPortfolio, ModelMap model) {
-        try {
-            portfolioSvc.update(pPortfolio);
-        } catch (ApplicationException e) {
-            return new ResponseEntity<String>(e.toString(), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-        return new ResponseEntity<String>("Portfolio updated successfully!", HttpStatus.OK);
+    @RequestMapping(value = StringConstants.PATH_CONTACT_ME,
+            method = RequestMethod.POST,
+            headers ="Content-Type=application/json")
+    @ResponseBody
+    public String contactMe(@RequestBody String pContactJson, @PathVariable String pUserId)
+            throws ApplicationException {
+        ContactMe contactMe = (ContactMe) jsonUtils.toObject(pContactJson, ContactMe.class);
+        mailer.sendPreConfiguredMail(contactMe.getEmailMessage());
+        return jsonUtils.toJson(new PortfolioVo(ErrorCode.SUCCESS, "Thanks you for your message!"));
     }
 }

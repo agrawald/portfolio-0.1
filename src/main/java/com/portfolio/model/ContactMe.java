@@ -102,4 +102,18 @@ public class ContactMe {
         this.message = message;
     }
 
+    public String getEmailMessage()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Name: ");
+        sb.append(this.name);
+        sb.append("\nEmail: ");
+        sb.append(this.email);
+        sb.append("\nPhone: ");
+        sb.append(this.contact);
+        sb.append("\nMessage: ");
+        sb.append(this.message);
+        return sb.toString();
+    }
+
 }

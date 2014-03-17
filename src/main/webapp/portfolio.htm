@@ -52,7 +52,7 @@
     </script>
     <script id="tAbout" type="text/template">
         <h2>About me...</h2>
-        <p style="text-align: justify">{{user.about}}</p>
+        <span class="about">{{escape user.about}}</span>
     </script>
     <script id="tPortfolio" type="text/template">
         <h2>Portfolio</h2>
@@ -101,39 +101,38 @@
                 <td colspan="2" class="center"><h2>Contact Me</h2></td>
             </tr>
             <tr>
-                <td style="border-right: solid; border-right-color: firebrick">{{contactMe}}</td>
+                <td class="contact">{{contactMe}}</td>
                 <td>
                     <form id="frmContact">
+                        <input type="hidden" id="userId" value="{{user.userId}}">
                         <table class="table">
                             <tr class="row">
-                                <td class="left"><label path="name">Full Name: </label></td>
-                                <td class="left ui-corner-all"><input path="name" id="name"/></td>
+                                <td class="right"><label path="name">Full Name: </label></td>
+                                <td class="left"><input path="name" id="name" class="ui-corner-all"/></td>
                             </tr>
                             <tr class="row">
-                                <td class="left"><label path="email">Email: </label></td>
-                                <td class="left ui-corner-all"><input path="email" id="email"/></td>
+                                <td class="right"><label path="email">Email: </label></td>
+                                <td class="left"><input path="email" id="email" class="ui-corner-all"/></td>
                             </tr>
                             <tr class="row">
-                                <td class="left"><label path="contact">Telephone: </label></td>
-                                <td class="left ui-corner-all"><input path="contact" id="contact"/></td>
+                                <td class="right"><label path="contact">Telephone: </label></td>
+                                <td class="left"><input path="contact" id="contact" class="ui-corner-all"/></td>
                             </tr>
                             <tr class="row">
-                                <td class="left"><label path="message">Message: </label></td>
-                                <td class="left ui-corner-all"><textarea path="message" id="message"></textarea></td>
+                                <td class="right"><label path="message">Message: </label></td>
+                                <td class="left"><textarea path="message" id="message" class="ui-corner-all"></textarea></td>
                             </tr>
                             <tr class="row">
-                                <td class="center">
-                                    <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                                <td class="right" colspan="2">
+                                    <button class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
                                             role="button"
                                             aria-disabled="false" type="reset">
                                         <span class="ui-button-text">Clear</a></span>
                                     </button>
-                                </td>
-                                <td class="center">
                                     <button id="submit"
-                                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
                                             role="button"
-                                            aria-disabled="false">
+                                            aria-disabled="false" type="submit">
                                         <span class="ui-button-text">Submit</a></span>
                                     </button>
                                 </td>
@@ -143,6 +142,9 @@
                 </td>
             </tr>
         </table>
+    </script>
+    <script id="tDialog" type="text/template">
+        <p>{{escape message}}</p>
     </script>
 </head>
 <body class="center">
@@ -196,6 +198,7 @@
         <div id="testimonials"></div>
         <div id="contactMe" class="center"></div>
     </div>
+    <div id="dialog" title="Message"></div>
 </div>
 
 </body>

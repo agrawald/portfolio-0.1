@@ -1,6 +1,7 @@
 package com.portfolio.controller;
 
 import com.portfolio.exception.ApplicationException;
+import com.portfolio.mail.ApplicationMailer;
 import com.portfolio.model.ContactMe;
 import com.portfolio.service.PortfolioSvc;
 import com.portfolio.utils.JsonUtils;
@@ -21,6 +22,8 @@ public abstract class GenericController {
     protected JsonUtils jsonUtils;
     @Autowired
     protected PortfolioSvc portfolioSvc;
+    @Autowired
+    protected ApplicationMailer mailer;
 
     protected ModelAndView errorPage(ApplicationException e) {
         ModelAndView modelAndView = new ModelAndView("error");

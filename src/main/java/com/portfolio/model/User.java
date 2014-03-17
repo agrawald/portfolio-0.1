@@ -12,19 +12,30 @@ public class User {
     private String lastName;
     private Address address;
     private Contact contact;
+    private String email;
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
-                .append("userId", userId)
-                .append("password", password)
-                .append("firstName", firstName)
-                .append("lastName", lastName)
-                .append("address", address)
-                .append("contact", contact)
-                .append("linkedInUrl", linkedInUrl)
-                .append("about", about)
-                .toString();
+        final StringBuilder sb = new StringBuilder("User{");
+        sb.append("userId='").append(userId).append('\'');
+        sb.append(", password='").append(password).append('\'');
+        sb.append(", firstName='").append(firstName).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", address=").append(address);
+        sb.append(", contact=").append(contact);
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", linkedInUrl='").append(linkedInUrl).append('\'');
+        sb.append(", about='").append(about).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public User() {

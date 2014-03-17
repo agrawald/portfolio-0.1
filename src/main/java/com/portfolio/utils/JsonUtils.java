@@ -13,6 +13,10 @@ import java.io.IOException;
  */
 @Service
 public class JsonUtils {
+
+    public static String SUCCESS_JSON = "{code: 'success', }";
+    public static String ERROR_JSON = "{code: 'error'}";
+
     @Autowired
     private ObjectMapper mapper;
 

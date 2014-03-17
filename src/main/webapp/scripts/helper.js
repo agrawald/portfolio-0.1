@@ -26,6 +26,9 @@ Handlebars.registerHelper('projectTech', function (items) {
     return out;
 });
 
+Handlebars.registerHelper('escape', function(text) {
+    return Handlebars.Utils.escapeExpression(text);
+});
 
 Handlebars.registerHelper('technology', function (items, options) {
     var out = "";

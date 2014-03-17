@@ -8,8 +8,9 @@
             home: "03123434",
             mobile: "+61470020152"
         },
+        email: "agrawal.dheeraj.7@gmail.com",
         linkedInUrl: "https://au.linkedin.com/in/dheerajagrawal/",
-        about: "An ingenious, productive and team-oriented individual with 8+ years of international experience in product/software architecture design and development.\nExperienced working in Scrum, Agile, ITIL and Test driven development (TDD) methodologies around technologies and frame works such as J2EE, Spring. Hibernate, GWT, Struts, Oracle and MS SQL Server in domain areas of Product Life-ycle Management (PLM), Life Insurance Underwriting, Project Management, Telecom, Supply Chain Management (SCM) and Travel industry.\nExcellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor.\nFast learner, sagacious and inquisitive to learn new technologies.\nHighly skilled and capable software professional with spacious skills in software analysis, design, and development.\nAbility to bridge gap between technical and business teams to ensure efficiency while developing and delivery of product/software.",
+        about: "An ingenious, productive and team-oriented individual with 8+ years of international experience in product/software architecture design and development.\n\nExperienced working in Scrum, Agile, ITIL and Test driven development (TDD) methodologies around technologies and frame works such as J2EE, Spring. Hibernate, GWT, Struts, Oracle and MS SQL Server in domain areas of Product Life-ycle Management (PLM), Life Insurance Underwriting, Project Management, Telecom, Supply Chain Management (SCM) and Travel industry.\nExcellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor.\n\nFast learner, sagacious and inquisitive to learn new technologies.\n\nHighly skilled and capable software professional with spacious skills in software analysis, design, and development.\n\nAbility to bridge gap between technical and business teams to ensure efficiency while developing and delivery of product/software.",
         address: {
             unit: "5",
             plot: "20",
@@ -2030,7 +2031,7 @@
             ]
         },
         {
-            name: "Portfolio",
+            name: "Portfolio (this.website)",
             client: "",
             role: "",
             description: "The web application which gives a brief introduction about my 8+ years of software development career.",
@@ -2087,14 +2088,14 @@
     ],
     allTestimonials: [
         {
-            description: "A very cool testimonial #1",
+            description: "",
             givenBy: "",
             company: "",
             project: ""
 
         },
         {
-            description: "A very cool testimonial #2",
+            description: "",
             givenBy: "",
             company: "",
             project: ""
@@ -2415,6 +2416,6 @@
             experience: "0"
         }
     ],
-    contactMe: "Thank you for dropping by! \nPlease provide me your contact details and I will get in touch with you",
+    contactMe: "Thank you for dropping by! \n\nPlease provide me your contact details and I will get in touch with you",
     enabled: "true"
 }

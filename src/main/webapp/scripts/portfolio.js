@@ -56,6 +56,21 @@ $(function(){
         }
     });
 
+    var DialogView = Backbone.View.extend({
+        el:'#dialog',
+        template: $('#tDialog').html(),
+        render: function(model){
+            if(!_.isUndefined(model))
+            {
+                console.log("In render" + model);
+                var hb_template = Handlebars.compile(this.template);
+                var html = hb_template(model);
+                this.$el.html(html);
+                $('#dialog').dialog();
+            }
+        }
+    });
+
     var PortfolioView = GenericView.extend({
         el:'#portfolio',
         template: $('#tPortfolio').html(),
@@ -110,12 +125,20 @@ $(function(){
         submit: function (event) {
             console.log(event);
             event.preventDefault();
-            var contactme = new ContactMe();
-            contactme.save({
+            var contact = new ContactMe();
+            contact.save({
                 name: $('#name').val(),
                 email: $('#email').val(),
                 contact: $('#contact').val(),
-                message: $('#message').val()
+                message: $('#message').val(),
+                userId: $('#userId').val()
+            }, {
+                error: function(model, response){
+                    return new DialogView().render(response);
+                },
+                success:function(model, response){
+                    return new DialogView().render(response);
+                }
             });
         },
         addHandlers: function(){
