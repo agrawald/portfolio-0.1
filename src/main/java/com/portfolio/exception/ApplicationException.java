@@ -1,35 +1,36 @@
 package com.portfolio.exception;
 
+import com.portfolio.utils.enume.MessageCode;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
  * Created by e7006722 on 26/02/14.
  */
 public class ApplicationException extends Exception {
-    private ErrorCode errorCode;
+    private MessageCode messageCode;
 
-    public ApplicationException(ErrorCode errorCode, String message, Throwable cause) {
+    public ApplicationException(MessageCode messageCode, String message, Throwable cause) {
         super(message, cause);
-        this.errorCode = errorCode;
+        this.messageCode = messageCode;
     }
 
-    public ApplicationException(ErrorCode errorCode, String message) {
+    public ApplicationException(MessageCode messageCode, String message) {
         super(message);
-        this.errorCode = errorCode;
+        this.messageCode = messageCode;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .append("errorCode", errorCode)
+                .append("messageCode", messageCode)
                 .toString();
     }
 
-    public ErrorCode getErrorCode() {
-        return errorCode;
+    public MessageCode getMessageCode() {
+        return messageCode;
     }
 
-    public void setErrorCode(ErrorCode errorCode) {
-        this.errorCode = errorCode;
+    public void setMessageCode(MessageCode messageCode) {
+        this.messageCode = messageCode;
     }
 }

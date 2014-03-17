@@ -2,16 +2,11 @@ package com.portfolio.controller;
 
 import com.portfolio.exception.ApplicationException;
 import com.portfolio.mail.ApplicationMailer;
-import com.portfolio.model.ContactMe;
 import com.portfolio.service.PortfolioSvc;
 import com.portfolio.utils.JsonUtils;
-import com.portfolio.utils.StringConstants;
+import com.portfolio.vo.ResponseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by e7006722 on 27/02/14.
@@ -25,9 +20,12 @@ public abstract class GenericController {
     @Autowired
     protected ApplicationMailer mailer;
 
-    protected ModelAndView errorPage(ApplicationException e) {
-        ModelAndView modelAndView = new ModelAndView("error");
-        modelAndView.addObject(StringConstants.P_ERROR, e.getErrorCode() + ": " + e.getMessage());
-        return modelAndView;
+    protected String errorPage(ApplicationException e) {
+        try {
+            return jsonUtils.toJson(new ResponseVo(e.getMessageCode(), e.getMessage()));
+        } catch (ApplicationException e1) {
+            e1.printStackTrace();
+            return null;
+        }
     }
 }

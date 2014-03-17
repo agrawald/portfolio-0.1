@@ -1,24 +1,24 @@
 package com.portfolio.vo;
 
-import com.portfolio.utils.enume.ErrorCode;
+import com.portfolio.utils.enume.MessageCode;
 
 /**
  * Created by e7006722 on 17/03/14.
  */
-public class PortfolioVo {
-    private ErrorCode code;
+public class ResponseVo {
+    private MessageCode code;
     private String message;
 
-    public PortfolioVo(ErrorCode code, String message) {
+    public ResponseVo(MessageCode code, String message) {
         this.code = code;
         this.message = message;
     }
 
     public String getCode() {
-        return code.getCode();
+        return code.toString();
     }
 
-    public void setCode(ErrorCode code) {
+    public void setCode(MessageCode code) {
         this.code = code;
     }
 

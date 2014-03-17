@@ -1,7 +1,7 @@
 package com.portfolio.utils;
 
 import com.portfolio.exception.ApplicationException;
-import com.portfolio.exception.ErrorCode;
+import com.portfolio.utils.enume.MessageCode;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ public class JsonUtils {
         try {
             return mapper.writeValueAsString(obj);
         } catch (IOException e) {
-            throw new ApplicationException(ErrorCode.OBJ2JSON_ERROR, e.getMessage(), e);
+            throw new ApplicationException(MessageCode.OBJ2JSON_ERROR, e.getMessage(), e);
         }
     }
 
@@ -32,7 +32,7 @@ public class JsonUtils {
         try {
             return mapper.readValue(json, clazz);
         } catch (IOException e) {
-            throw new ApplicationException(ErrorCode.JSON2OBJ_ERROR, e.getMessage(), e);
+            throw new ApplicationException(MessageCode.JSON2OBJ_ERROR, e.getMessage(), e);
         }
     }
 }

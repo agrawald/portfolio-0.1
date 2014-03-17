@@ -1,7 +1,7 @@
 package com.portfolio.model;
 
 import com.portfolio.exception.ApplicationException;
-import com.portfolio.exception.ErrorCode;
+import com.portfolio.utils.enume.MessageCode;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -152,7 +152,7 @@ public class Portfolio {
 
     public String getUserId() throws ApplicationException {
         if (this.user == null)
-            throw new ApplicationException(ErrorCode.NULL_DATA, "portfolio.user");
+            throw new ApplicationException(MessageCode.NULL_DATA, "portfolio.user");
         return this.user.getUserId();
     }
 }
