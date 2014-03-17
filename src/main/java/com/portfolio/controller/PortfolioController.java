@@ -2,18 +2,20 @@ package com.portfolio.controller;
 
 import com.portfolio.exception.ApplicationException;
 import com.portfolio.model.ContactMe;
+import com.portfolio.model.Portfolio;
 import com.portfolio.utils.StringConstants;
 import com.portfolio.utils.enume.MessageCode;
 import com.portfolio.vo.ResponseVo;
+import org.codehaus.jackson.JsonFactory;
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.JsonParser;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
 
@@ -24,7 +26,18 @@ public class PortfolioController extends GenericController {
             produces = "application/json")
     @ResponseBody
     public String get(@PathVariable String pUserId) throws ApplicationException {
-        return jsonUtils.toJson(portfolioSvc.get(pUserId));
+        String fn = "/portfolio.json";
+        URL url = getClass().getResource(fn);
+        try {
+            File f = new File(url.toURI());
+            if (f.exists()) {
+                return jsonUtils.toJson(jsonUtils.toObject(f, Portfolio.class));
+            }
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        return jsonUtils.toJson(new ResponseVo(MessageCode.NOT_FOUND, "DB not found!"));
+        //return jsonUtils.toJson(portfolioSvc.get(pUserId));
     }
 
     @RequestMapping(value = {StringConstants.PATH_DOWNLOAD},
