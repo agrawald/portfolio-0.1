@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="72440bec-1799-4d3f-aaca-f98e7d9c9d84" name="Default" comment="" />
-    <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="resolving Heroku build error">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system.properties" afterPath="$PROJECT_DIR$/system.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="resolving Heroku build error" />
     <ignored path="Portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,74 +96,7 @@
     <favorites_list name="Portfolio" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PortfolioDao.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/dao/PortfolioDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="570" selection-end="570" vertical-scroll-proportion="0.3675" vertical-offset="138" max-vertical-offset="969">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="25" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="3762">
-              <folding>
-                <element signature="tag#build#0;tag#project#0" expanded="false" />
-                <element signature="tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/portfolio/AppTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="5" selection-start="358" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="1007">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortfolioDaoTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/portfolio/dao/PortfolioDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1045">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MockTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/portfolio/MockTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/portfolio/SpringTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Portfolio.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/model/Portfolio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2299">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -264,56 +194,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portfolio" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portfolio" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portfolio" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="dependency" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portfolio" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -550,6 +430,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -564,7 +445,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
+              <option name="myItemId" value="portfolio-0.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,17 +455,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
+              <option name="myItemId" value="portfolio-0.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -592,63 +469,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
+              <option name="myItemId" value="portfolio-0.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -666,29 +487,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
+              <option name="myItemId" value="portfolio-0.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -714,37 +513,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
+              <option name="myItemId" value="portfolio-0.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -765,26 +534,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1021,6 +775,21 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JettyConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings>
@@ -1037,21 +806,6 @@
       </server-settings>
       <predefined_log_file id="Jetty" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1233,10 +987,10 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Heroku Deployment.portfolio" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.AppTests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PortfolioDaoTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PortfolioDaoTest.testFindOne" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AppTests.index" />
-      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.PortfoliioWebApp" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.PortfoliioWebApp" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PortfolioDaoTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PortfolioDaoTest.testFindOne" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AppTests.index" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -1299,6 +1053,7 @@
       <workItem from="1394680337728" duration="12510000" />
       <workItem from="1394759784095" duration="12128000" />
       <workItem from="1394781892055" duration="19124000" />
+      <workItem from="1395032419946" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1">
       <created>1393367731562</created>
@@ -1384,40 +1139,40 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198772000" />
+    <option name="totallyTimeSpent" value="198814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="46" width="1448" height="858" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29555237" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22955523" sideWeight="0.4988764" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.78746593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40735695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22222222" sideWeight="0.5011236" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22955523" sideWeight="0.4988764" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.78746593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923468" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1529,9 +1284,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery-ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1858" column="32" selection-start="34578" selection-end="34578" vertical-scroll-proportion="0.16641453" vertical-offset="35192" max-vertical-offset="35853">
-          <folding />
-        </state>
+        <state line="1858" column="32" selection-start="34578" selection-end="34578" vertical-scroll-proportion="0.16641453" vertical-offset="35192" max-vertical-offset="35853" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/jre/lib/rt.jar!/sun/misc/IOUtils.class">
@@ -1541,30 +1294,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/jquery-ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="236756" selection-start="237733" selection-end="237733" vertical-scroll-proportion="0.10644258" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="4" column="236756" selection-start="237733" selection-end="237733" vertical-scroll-proportion="0.10644258" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/underscore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="14682" selection-end="14682" vertical-scroll-proportion="0.05322129" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="5" column="39" selection-start="14682" selection-end="14682" vertical-scroll-proportion="0.05322129" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/json.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="2078" selection-end="2078" vertical-scroll-proportion="0.10644258" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="2078" selection-end="2078" vertical-scroll-proportion="0.10644258" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/backbone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/config/AppConfig.java">
@@ -1576,63 +1321,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="63" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <folding />
-        </state>
+        <state line="0" column="63" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="50" selection-start="726" selection-end="726" vertical-scroll-proportion="0.64878047" vertical-offset="285" max-vertical-offset="1729">
-          <folding />
-        </state>
+        <state line="29" column="50" selection-start="726" selection-end="726" vertical-scroll-proportion="0.64878047" vertical-offset="285" max-vertical-offset="1729" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/handlebars.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2746" column="0" selection-start="89591" selection-end="89591" vertical-scroll-proportion="10.582927" vertical-offset="47835" max-vertical-offset="52288">
-          <folding />
-        </state>
+        <state line="2746" column="0" selection-start="89591" selection-end="89591" vertical-scroll-proportion="10.582927" vertical-offset="47835" max-vertical-offset="52288" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="22" selection-start="736" selection-end="736" vertical-scroll-proportion="0.37740386" vertical-offset="755" max-vertical-offset="2109">
-          <folding />
-        </state>
+        <state line="48" column="22" selection-start="736" selection-end="736" vertical-scroll-proportion="0.37740386" vertical-offset="755" max-vertical-offset="2109" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/aspect/LoggingAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="760">
-          <folding />
-        </state>
+        <state line="22" column="26" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="760" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="383" selection-end="383" vertical-scroll-proportion="0.33248082" vertical-offset="193" max-vertical-offset="1596">
-          <folding>
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="17" column="18" selection-start="383" selection-end="383" vertical-scroll-proportion="0.33248082" vertical-offset="193" max-vertical-offset="1596" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/utils/StringConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="11" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="665">
-          <folding />
-        </state>
+        <state line="24" column="11" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="665" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/utils/enume/StreetType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-          <folding />
-        </state>
+        <state line="5" column="12" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
@@ -1644,37 +1368,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/model/ContactMe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="21" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.7694064" vertical-offset="1297" max-vertical-offset="1862">
-          <folding />
-        </state>
+        <state line="113" column="21" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.7694064" vertical-offset="1297" max-vertical-offset="1862" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/vo/ResponseVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="722">
-          <folding>
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="17" column="30" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="722" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/utils/enume/MessageCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
-          <folding />
-        </state>
+        <state line="5" column="17" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/exception/ApplicationException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="423" selection-end="423" vertical-scroll-proportion="0.33578792" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
+        <state line="13" column="27" selection-start="423" selection-end="423" vertical-scroll-proportion="0.33578792" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/mail/ApplicationMailer.java">
@@ -1688,100 +1397,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/portfolio.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="50" selection-start="2036" selection-end="2044" vertical-scroll-proportion="-3.637931" vertical-offset="606" max-vertical-offset="1425">
-          <folding>
-            <element signature="tag#script#9;tag#head#0;tag#html#0" expanded="false" />
-            <element signature="tag#script#10;tag#head#0;tag#html#0" expanded="false" />
-            <element signature="tag#script#11;tag#head#0;tag#html#0" expanded="false" />
-            <element signature="tag#script#12;tag#head#0;tag#html#0" expanded="false" />
-            <element signature="tag#script#13;tag#head#0;tag#html#0" expanded="false" />
-            <element signature="tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395026548193" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="43" column="50" selection-start="2036" selection-end="2044" vertical-scroll-proportion="-3.637931" vertical-offset="606" max-vertical-offset="1425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="35" selection-start="3010" selection-end="3010" vertical-scroll-proportion="-9.366667" vertical-offset="1543" max-vertical-offset="4370">
-          <folding />
-        </state>
+        <state line="96" column="35" selection-start="3010" selection-end="3010" vertical-scroll-proportion="-9.366667" vertical-offset="1543" max-vertical-offset="4370" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/controller/GenericController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="497" selection-end="497" vertical-scroll-proportion="0.41036716" vertical-offset="0" max-vertical-offset="589">
-          <folding />
-        </state>
+        <state line="16" column="20" selection-start="497" selection-end="497" vertical-scroll-proportion="0.41036716" vertical-offset="0" max-vertical-offset="589" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/utils/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="5" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.7516199" vertical-offset="355" max-vertical-offset="874">
-          <folding />
-        </state>
+        <state line="44" column="5" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.7516199" vertical-offset="355" max-vertical-offset="874" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/portfolio.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.549763" vertical-offset="53" max-vertical-offset="46436">
-          <folding />
-        </state>
+        <state line="15" column="9" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.549763" vertical-offset="53" max-vertical-offset="46436" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/portfolio.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="0" selection-end="85935" vertical-scroll-proportion="0.3392857" vertical-offset="0" max-vertical-offset="46436">
-          <folding />
-        </state>
+        <state line="7" column="27" selection-start="0" selection-end="85935" vertical-scroll-proportion="0.3392857" vertical-offset="0" max-vertical-offset="46436" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1539">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="41" column="0" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1539" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_2_0_RELEASE.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/model/Testimonial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/dao/ContactMeDao.java">
@@ -1801,10 +1457,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="25" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="3762">
-          <folding>
-            <element signature="tag#build#0;tag#project#0" expanded="false" />
-            <element signature="tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1838,14 +1491,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/system.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="679">
-          <folding />
-        </state>
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="679" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/dao/PortfolioDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="570" selection-end="570" vertical-scroll-proportion="0.3675" vertical-offset="138" max-vertical-offset="969">
+        <state line="21" column="32" selection-start="570" selection-end="570" vertical-scroll-proportion="0.09555556" vertical-offset="242" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
