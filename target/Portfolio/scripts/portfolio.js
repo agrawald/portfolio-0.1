@@ -130,7 +130,7 @@ $(function(){
                 $('#name').focus();
                 new DialogView().render({
                     code: "REQUIRED",
-                    message: "Full Name"
+                    message: "Full Name is required"
                 });
                 return false;
             }
@@ -139,7 +139,7 @@ $(function(){
                 $('#email').focus();
                 new DialogView().render({
                     code: "REQUIRED",
-                    message: "Email"
+                    message: "Email is required"
                 });
                 return false;
             }
@@ -148,7 +148,7 @@ $(function(){
                 $('#email').focus();
                 new DialogView().render({
                     code: "INVALID",
-                    message: "Email address"
+                    message: "Email is invalid"
                 });
                 return false;
             }
@@ -256,6 +256,6 @@ $(function(){
         }
     });
 
-    var portfolio_router = new PortfolioRouter();
+    new PortfolioRouter();
     Backbone.history.start();
 });

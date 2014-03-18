@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list id="72440bec-1799-4d3f-aaca-f98e7d9c9d84" name="Default" comment="" />
     <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="Final touch up">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java" afterPath="$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/portfolio.htm" afterPath="$PROJECT_DIR$/src/main/webapp/portfolio.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Portfolio.iws" />
@@ -100,93 +101,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="portfolio.htm" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="portfolio.htm" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/portfolio.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="121" selection-start="5353" selection-end="5353" vertical-scroll-proportion="-6.586207" vertical-offset="1917" max-vertical-offset="3990">
+            <state line="144" column="13" selection-start="6727" selection-end="6727" vertical-scroll-proportion="0.77329195" vertical-offset="2487" max-vertical-offset="3990">
               <folding>
-                <marker date="1395114309416" expanded="true" signature="626:2267" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="643:2249" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="683:794" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="1050:2231" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="1111:2209" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="1157:1646" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="1463:1616" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="1689:2182" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="1992:2152" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="2586:3072" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="2638:2728" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="3897:6712" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="3914:4004" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="4021:6695" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="4097:6677" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="4140:6655" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="4268:6627" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="4313:4578" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="4623:4892" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="4937:5185" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="5230:5567" placeholder="..." />
-                <marker date="1395114309416" expanded="false" signature="5289:5308" placeholder="..." />
-                <marker date="1395114309416" expanded="false" signature="5475:5516" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="5612:6594" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="5675:6560" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="5800:6069" placeholder="..." />
-                <marker date="1395114309416" expanded="true" signature="6126:6522" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="626:2267" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="643:2249" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="683:794" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="1050:2231" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="1111:2209" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="1157:1646" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="1463:1616" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="1689:2182" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="1992:2152" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="2586:3072" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="2638:2728" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="3897:6712" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="3914:4004" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="4021:6695" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="4097:6677" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="4140:6655" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="4268:6627" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="4313:4578" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="4623:4892" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="4937:5185" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="5230:5567" placeholder="..." />
+                <marker date="1395114897252" expanded="false" signature="5289:5308" placeholder="..." />
+                <marker date="1395114897252" expanded="false" signature="5475:5516" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="5612:6594" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="5675:6560" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="5800:6069" placeholder="..." />
+                <marker date="1395114897252" expanded="true" signature="6126:6522" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="15" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="1601" max-vertical-offset="2280">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationMailer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/mail/ApplicationMailer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="16" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="836">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggingAspect.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/aspect/LoggingAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="760">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortfolioController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="88" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.5705706" vertical-offset="0" max-vertical-offset="1178">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfolio.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="45" selection-start="5020" selection-end="5020" vertical-scroll-proportion="0.0" vertical-offset="2754" max-vertical-offset="5073">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -262,10 +209,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/mail/SendGridMailer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/portfolio.htm" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/portfolio.htm" />
       </list>
     </option>
   </component>
@@ -622,32 +569,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -667,340 +588,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aspect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1523,7 +1110,7 @@
       <workItem from="1395032419946" duration="134000" />
       <workItem from="1395033111171" duration="4608000" />
       <workItem from="1395104407368" duration="862000" />
-      <workItem from="1395105727057" duration="6958000" />
+      <workItem from="1395105727057" duration="7425000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1">
       <created>1393367731562</created>
@@ -1633,11 +1220,15 @@
       <created>1395114403555</created>
       <updated>1395114403555</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Final touch up">
+      <created>1395114501007</created>
+      <updated>1395114501007</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211334000" />
+    <option name="totallyTimeSpent" value="211801000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1661,7 +1252,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="46" width="1448" height="858" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1676,7 +1267,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8446866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22955523" sideWeight="0.4988764" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42370573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42370573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1686,7 +1277,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22222222" sideWeight="0.5011236" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.123385936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.123385936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1972,23 +1563,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/aspect/LoggingAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="192" column="30" selection-start="6115" selection-end="6115" vertical-scroll-proportion="0.5499182" vertical-offset="3312" max-vertical-offset="5586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/mail/ApplicationMailer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="16" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="836">
           <folding />
         </state>
       </provider>
@@ -2007,66 +1584,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+        <state line="258" column="4" selection-start="7978" selection-end="7978" vertical-scroll-proportion="1.0855856" vertical-offset="4179" max-vertical-offset="5073">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="45" selection-start="5020" selection-end="5020" vertical-scroll-proportion="0.0" vertical-offset="2754" max-vertical-offset="5073">
+        <state line="15" column="35" selection-start="669" selection-end="669" vertical-scroll-proportion="0.4197349" vertical-offset="0" max-vertical-offset="679">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="38" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-0.4023155" vertical-offset="487" max-vertical-offset="1178">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/aspect/LoggingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.39507958" vertical-offset="69" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/mail/ApplicationMailer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="16" selection-start="887" selection-end="887" vertical-scroll-proportion="0.64914775" vertical-offset="132" max-vertical-offset="836">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="15" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="1601" max-vertical-offset="2280">
+        <state line="113" column="15" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.81107956" vertical-offset="1576" max-vertical-offset="2280">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/portfolio.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="121" selection-start="5353" selection-end="5353" vertical-scroll-proportion="-6.586207" vertical-offset="1917" max-vertical-offset="3990">
+        <state line="144" column="13" selection-start="6727" selection-end="6727" vertical-scroll-proportion="0.77329195" vertical-offset="2487" max-vertical-offset="3990">
           <folding>
-            <marker date="1395114309416" expanded="true" signature="626:2267" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="643:2249" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="683:794" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="1050:2231" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="1111:2209" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="1157:1646" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="1463:1616" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="1689:2182" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="1992:2152" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="2586:3072" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="2638:2728" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="3897:6712" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="3914:4004" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="4021:6695" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="4097:6677" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="4140:6655" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="4268:6627" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="4313:4578" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="4623:4892" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="4937:5185" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="5230:5567" placeholder="..." />
-            <marker date="1395114309416" expanded="false" signature="5289:5308" placeholder="..." />
-            <marker date="1395114309416" expanded="false" signature="5475:5516" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="5612:6594" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="5675:6560" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="5800:6069" placeholder="..." />
-            <marker date="1395114309416" expanded="true" signature="6126:6522" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="626:2267" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="643:2249" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="683:794" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="1050:2231" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="1111:2209" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="1157:1646" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="1463:1616" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="1689:2182" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="1992:2152" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="2586:3072" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="2638:2728" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="3897:6712" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="3914:4004" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="4021:6695" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="4097:6677" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="4140:6655" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="4268:6627" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="4313:4578" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="4623:4892" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="4937:5185" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="5230:5567" placeholder="..." />
+            <marker date="1395114897252" expanded="false" signature="5289:5308" placeholder="..." />
+            <marker date="1395114897252" expanded="false" signature="5475:5516" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="5612:6594" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="5675:6560" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="5800:6069" placeholder="..." />
+            <marker date="1395114897252" expanded="true" signature="6126:6522" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="88" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.5705706" vertical-offset="0" max-vertical-offset="1178">
-          <folding />
         </state>
       </provider>
     </entry>
