@@ -117,29 +117,66 @@ $(function(){
     var ContactMeView = GenericView.extend({
         el: '#contactMe',
         template: $('#tContactMe').html(),
+        emailRegEx: /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i,
         render: function(model){
             var _this = GenericView.prototype.render.call(this, model);
             this.addHandlers();
             return _this;
         },
+        validate: function()
+        {
+            if(_.isEmpty($('#name').val()))
+            {
+                $('#name').focus();
+                new DialogView().render({
+                    code: "REQUIRED",
+                    message: "Full Name"
+                });
+                return false;
+            }
+            else if(_.isEmpty($('#email').val()))
+            {
+                $('#email').focus();
+                new DialogView().render({
+                    code: "REQUIRED",
+                    message: "Email"
+                });
+                return false;
+            }
+            else if(!_.isEmpty($('#email').val()) && !(this.emailRegEx.test($('#email').val())))
+            {
+                $('#email').focus();
+                new DialogView().render({
+                    code: "INVALID",
+                    message: "Email address"
+                });
+                return false;
+            }
+
+            return true;
+        },
         submit: function (event) {
             console.log(event);
             event.preventDefault();
             var contact = new ContactMe();
-            contact.save({
-                name: $('#name').val(),
-                email: $('#email').val(),
-                contact: $('#contact').val(),
-                message: $('#message').val(),
-                userId: $('#userId').val()
-            }, {
-                error: function(model, response){
-                    return new DialogView().render(response);
+            if(this.validate())
+            {
+                contact.save({
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    contact: $('#contact').val(),
+                    message: $('#message').val(),
+                    userId: $('#userId').val()
                 },
-                success:function(model, response){
-                    return new DialogView().render(response);
-                }
-            });
+                {
+                    error: function(model, response){
+                        return new DialogView().render(response);
+                    },
+                    success:function(model, response){
+                        return new DialogView().render(response);
+                    }
+                });
+            }
         },
         addHandlers: function(){
             var _this = this;
