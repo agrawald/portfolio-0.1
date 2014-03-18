@@ -1,6 +1,6 @@
 $(function(){
     var Portfolio = Backbone.Model.extend({
-        urlRoot: 'http://localhost:8080/api/portfolio',
+        urlRoot: '/api/portfolio',
         idAttribute: 'id',
         url: function(){
             return this.urlRoot;
@@ -8,7 +8,7 @@ $(function(){
     });
 
     var ContactMe = Backbone.Model.extend({
-        urlRoot: 'http://localhost:8080/api/contact/dagrawal',
+        urlRoot: '/api/contact/dagrawal',
         idAttribute: 'id',
         url: function(){
             return this.urlRoot;
@@ -19,7 +19,7 @@ $(function(){
         userId: 'dagrawal',
         model: Portfolio,
         url:function(){
-            return 'http://localhost:8080/api/portfolio/' + this.userId;
+            return '/api/portfolio/' + this.userId;
         },
         getEnabled:function(){
             return this.where({enabled: true});
