@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list id="72440bec-1799-4d3f-aaca-f98e7d9c9d84" name="Default" comment="" />
     <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="Removing Mongo dependency to deploy on heroku">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Portfolio.iws" />
@@ -103,7 +104,16 @@
       <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="926" selection-end="926" vertical-scroll-proportion="0.5225" vertical-offset="114" max-vertical-offset="912">
+            <state line="19" column="44" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.7152941" vertical-offset="57" max-vertical-offset="931">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="26" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5491">
               <folding />
             </state>
           </provider>
@@ -182,19 +192,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortfolioSvc.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/service/PortfolioSvc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="456">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PortfolioSvcImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/service/impl/PortfolioSvcImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1064">
+            <state line="22" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1064">
               <folding />
             </state>
           </provider>
@@ -284,15 +285,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/utils/JsonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/portfolio.json" />
         <option value="$PROJECT_DIR$/docs/portfolio.json" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/portfolio/AppTests.java" />
         <option value="$PROJECT_DIR$/system.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/portfolio.htm" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/dao/GenericDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       </list>
     </option>
   </component>
@@ -1210,21 +1211,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JettyConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings>
@@ -1241,6 +1227,21 @@
       </server-settings>
       <predefined_log_file id="Jetty" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1490,7 +1491,8 @@
       <workItem from="1394781892055" duration="19124000" />
       <workItem from="1395032419946" duration="134000" />
       <workItem from="1395033111171" duration="4608000" />
-      <workItem from="1395104407368" duration="572000" />
+      <workItem from="1395104407368" duration="862000" />
+      <workItem from="1395105727057" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1">
       <created>1393367731562</created>
@@ -1584,7 +1586,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204086000" />
+    <option name="totallyTimeSpent" value="205271000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1608,7 +1610,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="46" width="1448" height="858" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1630,7 +1632,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.123385936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22955523" sideWeight="0.4988764" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42370573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1877,13 +1879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="3762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/portfolio/MockTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="22" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532" />
@@ -2002,9 +1997,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5491">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="926" selection-end="926" vertical-scroll-proportion="0.5225" vertical-offset="114" max-vertical-offset="912">
+        <state line="19" column="44" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.7152941" vertical-offset="57" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
