@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list id="72440bec-1799-4d3f-aaca-f98e7d9c9d84" name="Default" comment="" />
     <list default="true" id="15978e62-ce12-424f-b175-0fb34f9da962" name="GUi changes to fix the sizes (cherry picked from commit 5639124)" comment="Final touch up">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/helper.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/helper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/portfolio.htm" afterPath="$PROJECT_DIR$/src/main/webapp/portfolio.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Portfolio.iws" />
@@ -104,36 +105,58 @@
       <file leaf-file-name="portfolio.htm" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/portfolio.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="13" selection-start="6727" selection-end="6727" vertical-scroll-proportion="0.77329195" vertical-offset="2487" max-vertical-offset="3990">
+            <state line="96" column="51" selection-start="3960" selection-end="3960" vertical-scroll-proportion="0.5929878" vertical-offset="1435" max-vertical-offset="2166">
               <folding>
-                <marker date="1395114897252" expanded="true" signature="626:2267" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="643:2249" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="683:794" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="1050:2231" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="1111:2209" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="1157:1646" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="1463:1616" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="1689:2182" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="1992:2152" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="2586:3072" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="2638:2728" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="3897:6712" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="3914:4004" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="4021:6695" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="4097:6677" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="4140:6655" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="4268:6627" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="4313:4578" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="4623:4892" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="4937:5185" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="5230:5567" placeholder="..." />
-                <marker date="1395114897252" expanded="false" signature="5289:5308" placeholder="..." />
-                <marker date="1395114897252" expanded="false" signature="5475:5516" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="5612:6594" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="5675:6560" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="5800:6069" placeholder="..." />
-                <marker date="1395114897252" expanded="true" signature="6126:6522" placeholder="..." />
+                <element signature="tag#script#13;tag#head#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <marker date="1395118327005" expanded="true" signature="626:2267" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="643:2249" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="683:794" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="1050:2231" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="1111:2209" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="1157:1646" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="1463:1616" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="1689:2182" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="1992:2152" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="2586:3286" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="2744:3223" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="2875:3012" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="3038:3200" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4092:6907" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4109:4199" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4216:6890" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4292:6872" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4335:6850" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4463:6822" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4508:4773" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="4818:5087" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="5132:5380" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="5425:5762" placeholder="..." />
+                <marker date="1395118327005" expanded="false" signature="5484:5503" placeholder="..." />
+                <marker date="1395118327005" expanded="false" signature="5670:5711" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="5807:6789" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="5870:6755" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="5995:6264" placeholder="..." />
+                <marker date="1395118327005" expanded="true" signature="6321:6717" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/helper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="14" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="29" selection-start="318" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2242">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/handlebars.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/model/Technology.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/model/Portfolio.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/jquery-ui.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/utils/StringConstants.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/jquery.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/jquery-ui.js" />
@@ -188,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/underscore.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/backbone.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/about.htm" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/helper.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/controller/ContactMeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/model/ContactMe.java" />
@@ -209,9 +230,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/mail/SendGridMailer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/helper.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/jquery-ui.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/portfolio.htm" />
       </list>
     </option>
@@ -511,86 +534,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio-0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -830,6 +773,21 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JettyConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings>
@@ -846,21 +804,6 @@
       </server-settings>
       <predefined_log_file id="Jetty" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1110,7 +1053,8 @@
       <workItem from="1395032419946" duration="134000" />
       <workItem from="1395033111171" duration="4608000" />
       <workItem from="1395104407368" duration="862000" />
-      <workItem from="1395105727057" duration="7425000" />
+      <workItem from="1395105727057" duration="7943000" />
+      <workItem from="1395116778368" duration="1544000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1">
       <created>1393367731562</created>
@@ -1228,7 +1172,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211801000" />
+    <option name="totallyTimeSpent" value="213863000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1252,36 +1196,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="46" width="1448" height="858" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29555237" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.668428" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7643052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8446866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22955523" sideWeight="0.4988764" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42370573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6689373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22222222" sideWeight="0.5011236" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.123385936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.123385936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8441215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22916667" sideWeight="0.4988764" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42272127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923468" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1336,25 +1280,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/service/impl/PortfolioSvcImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/dao/PortfolioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="1083">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/dao/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="37" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="836">
-          <folding />
-        </state>
+        <state line="11" column="37" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="836" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
@@ -1397,11 +1325,6 @@
         <state line="13" column="28" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="437" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery-ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1858" column="32" selection-start="34578" selection-end="34578" vertical-scroll-proportion="0.16641453" vertical-offset="35192" max-vertical-offset="35853" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/jre/lib/rt.jar!/sun/misc/IOUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.14264265" vertical-offset="0" max-vertical-offset="666" />
@@ -1425,11 +1348,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/backbone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="50" selection-start="726" selection-end="726" vertical-scroll-proportion="0.64878047" vertical-offset="285" max-vertical-offset="1729" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/handlebars.js">
@@ -1489,9 +1407,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/model/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2299">
-          <folding />
-        </state>
+        <state line="17" column="13" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2299" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/portfolio/MockTest.java">
@@ -1523,37 +1439,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/service/PortfolioSvc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="399">
-          <folding />
-        </state>
+        <state line="11" column="14" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/service/impl/PortfolioSvcImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1064">
-          <folding />
-        </state>
+        <state line="22" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1064" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/dao/PortfolioDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding />
-        </state>
+        <state line="14" column="40" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/dao/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="37" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
-          <folding />
-        </state>
+        <state line="11" column="37" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1482">
-          <folding />
-        </state>
+        <state line="15" column="18" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1482" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
@@ -1572,44 +1478,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="11" selection-start="1914" selection-end="1914" vertical-scroll-proportion="1.0752941" vertical-offset="208" max-vertical-offset="931">
-          <folding />
-        </state>
+        <state line="35" column="11" selection-start="1914" selection-end="1914" vertical-scroll-proportion="1.0752941" vertical-offset="208" max-vertical-offset="931" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="74" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="636">
-          <folding />
-        </state>
+        <state line="0" column="74" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="636" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/portfolio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="4" selection-start="7978" selection-end="7978" vertical-scroll-proportion="1.0855856" vertical-offset="4179" max-vertical-offset="5073">
-          <folding />
-        </state>
+        <state line="258" column="4" selection-start="7978" selection-end="7978" vertical-scroll-proportion="1.0855856" vertical-offset="4179" max-vertical-offset="5073" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="669" selection-end="669" vertical-scroll-proportion="0.4197349" vertical-offset="0" max-vertical-offset="679">
-          <folding />
-        </state>
+        <state line="15" column="35" selection-start="669" selection-end="669" vertical-scroll-proportion="0.4197349" vertical-offset="0" max-vertical-offset="679" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/controller/PortfolioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-0.4023155" vertical-offset="487" max-vertical-offset="1178">
-          <folding />
-        </state>
+        <state line="27" column="38" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-0.4023155" vertical-offset="487" max-vertical-offset="1178" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/aspect/LoggingAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.39507958" vertical-offset="69" max-vertical-offset="760">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.39507958" vertical-offset="69" max-vertical-offset="760" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/portfolio/mail/ApplicationMailer.java">
@@ -1619,44 +1513,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="14" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/images/ui-bg_inset-soft_30_f58400_1x100.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/images/ui-bg_inset-soft_25_000000_1x100.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="926" column="23" selection-start="18202" selection-end="18208" vertical-scroll-proportion="0.38655463" vertical-offset="17318" max-vertical-offset="35853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="15" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.81107956" vertical-offset="1576" max-vertical-offset="2280">
+        <state line="19" column="29" selection-start="318" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2242">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/portfolio.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="13" selection-start="6727" selection-end="6727" vertical-scroll-proportion="0.77329195" vertical-offset="2487" max-vertical-offset="3990">
+        <state line="96" column="51" selection-start="3960" selection-end="3960" vertical-scroll-proportion="0.5929878" vertical-offset="1435" max-vertical-offset="2166">
           <folding>
-            <marker date="1395114897252" expanded="true" signature="626:2267" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="643:2249" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="683:794" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="1050:2231" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="1111:2209" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="1157:1646" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="1463:1616" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="1689:2182" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="1992:2152" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="2586:3072" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="2638:2728" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="3897:6712" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="3914:4004" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="4021:6695" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="4097:6677" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="4140:6655" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="4268:6627" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="4313:4578" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="4623:4892" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="4937:5185" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="5230:5567" placeholder="..." />
-            <marker date="1395114897252" expanded="false" signature="5289:5308" placeholder="..." />
-            <marker date="1395114897252" expanded="false" signature="5475:5516" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="5612:6594" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="5675:6560" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="5800:6069" placeholder="..." />
-            <marker date="1395114897252" expanded="true" signature="6126:6522" placeholder="..." />
+            <element signature="tag#script#13;tag#head#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1395118327005" expanded="true" signature="626:2267" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="643:2249" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="683:794" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="1050:2231" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="1111:2209" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="1157:1646" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="1463:1616" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="1689:2182" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="1992:2152" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="2586:3286" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="2744:3223" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="2875:3012" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="3038:3200" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4092:6907" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4109:4199" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4216:6890" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4292:6872" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4335:6850" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4463:6822" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4508:4773" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="4818:5087" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="5132:5380" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="5425:5762" placeholder="..." />
+            <marker date="1395118327005" expanded="false" signature="5484:5503" placeholder="..." />
+            <marker date="1395118327005" expanded="false" signature="5670:5711" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="5807:6789" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="5870:6755" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="5995:6264" placeholder="..." />
+            <marker date="1395118327005" expanded="true" signature="6321:6717" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -58,26 +58,28 @@
         <h2>Portfolio</h2>
         <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
             {{#tabs organisations}}
-            <p>{{designation}} - ({{startDt}}-{{endDt}})
+                <p>{{designation}} - ({{startDt}}-{{endDt}})</p>
                 {{#list projects}}
-
-            <h3>{{name}} - {{role}} - {{client}}</h3>
-
-            <p>{{description}}</p>
-            <h4>Responsibilities</h4>
-            {{#list responsibilities}}{{/list}}
-            <h4>Technologies</h4>
-
-            <div>{{#projectTech technologies}} {{/projectTech}}</div>
-            {{/list}}
-            </p>
+                <div>
+                    <h3>{{name}} - {{role}} - {{client}}</h3>
+                    <p>{{description}}</p>
+                    <div>
+                        <h4>Responsibilities</h4>
+                        {{#list responsibilities}}{{/list}}
+                    </div>
+                    <div>
+                        <h4>Technologies</h4>
+                        <div>{{#technology technologies}} {{name}} {{/technology}}</div>
+                    </div>
+                </div>
+                {{/list}}
             {{/tabs}}
         </div>
     </script>
     <script id="tTechnologies" type="text/template">
         <h2>Skill Set</h2>
         {{#technology allTechnologies}}
-        <div class="technology">{{name}}</div>
+            {{name}}
         {{/technology}}
     </script>
     <script id="tTestimonials" type="text/template">
@@ -92,7 +94,7 @@
         <h4>Responsibilities</h4>
         {{#list responsibilities}}{{/list}}
         <h4>Technologies</h4>
-        <div>{{#projectTech technologies}} {{/projectTech}}</div>
+        <div>{{#technology technologies}} {{name}} {{/technology}}</div>
         {{/list}}
     </script>
     <script id="tContactMe" type="text/template">

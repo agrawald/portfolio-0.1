@@ -14,34 +14,35 @@ Handlebars.registerHelper('list', function(items, options) {
     return out + "</ol>";
 });
 
-Handlebars.registerHelper('projectTech', function (items) {
-    var out = "";
+Handlebars.registerHelper('technology', function (items, options) {
+    var out = "<ol>";
 
     for (var i = 0, l = items.length; i < l; i++) {
-        out = out + items[i].name;
-        if (i != l - 1)
-            out += ", ";
+        if(options.fn(items[i]) == "")
+            out = out + "<li class='show-bean'>" + items[i] + "</li>";
+        else
+            out = out + "<li class='show-bean'>" + options.fn(items[i]) + "</li>";
     }
 
-    return out;
+    return out+"</ol>";
 });
 
 Handlebars.registerHelper('escape', function(text) {
     return Handlebars.Utils.escapeExpression(text);
 });
 
-Handlebars.registerHelper('technology', function (items, options) {
-    var out = "";
-
-    for (var i = 0, l = items.length; i < l; i++) {
-        if (options.fn(items[i]) == "")
-            out = out + " " + items[i] + " ";
-        else
-            out = out + " " + options.fn(items[i]) + " ";
-    }
-
-    return out;
-});
+//Handlebars.registerHelper('technology', function (items, options) {
+//    var out = "";
+//
+//    for (var i = 0, l = items.length; i < l; i++) {
+//        if (options.fn(items[i]) == "")
+//            out = out + " " + items[i] + " ";
+//        else
+//            out = out + " " + options.fn(items[i]) + " ";
+//    }
+//
+//    return out;
+//});
 
 Handlebars.registerHelper('fullName', function(user, options) {
     return options.fn(user).toUpperCase();

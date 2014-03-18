@@ -76,18 +76,16 @@ table{
     text-align: -webkit-center;
 }
 
-.technology {
-    background-color: #555555;
-    display: block;
-    padding: 10px 10px;
-    border-radius: 15px;
-    width: auto;
-    float: left;
-    margin: 2px 5px;
+.show-bean:hover {
+    background-color: #000000 ;
 }
 
-.technology:hover {
-    background-color: #414141;
+.show-bean{
+    background-color: #333333;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin: 2px 5px;
 }
 
 #tabs
