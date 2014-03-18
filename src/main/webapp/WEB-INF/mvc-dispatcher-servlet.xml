@@ -21,10 +21,10 @@
     <bean id="mapper" class="org.codehaus.jackson.map.ObjectMapper"/>
 
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-        <property name="host" value="smtp.gmail.com"/>
+        <property name="host" value="smtp.sendgrid.net"/>
         <property name="port" value="587"/>
-        <property name="username" value="agrawal.dheeraj.7@gmail.com"/>
-        <property name="password" value="Tellmesomething"/>
+        <property name="username" value="app23096387@heroku.com"/>
+        <property name="password" value="99fggd8t"/>
         <property name="javaMailProperties">
             <props>
                 <prop key="mail.transport.protocol">smtp</prop>
@@ -38,7 +38,7 @@
     <!-- You can have some pre-configured messagess also which are ready to send -->
     <bean id="preConfiguredMessage" class="org.springframework.mail.SimpleMailMessage">
         <property name="to" value="agrawal.dheeraj.7@gmail.com"></property>
-        <property name="from" value="agrawal.dheeraj.7@gmail.com"></property>
+        <property name="from" value="app23096387@heroku.com"></property>
         <property name="subject" value="PORTFOLIO - Opportunity"/>
     </bean>
 </beans>
