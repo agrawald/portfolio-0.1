@@ -29,16 +29,12 @@ public class PortfolioController extends GenericController {
         try {
             URL url = getClass().getResource(fn);
             File f = new File(url.toURI());
-            System.out.println("file exisits"+ f.exists());
-            if (f.exists()) {
-                System.out.println("now returning");
+            if (f.exists())
                 return jsonUtils.toJson(jsonUtils.toObject(f, Portfolio.class));
-            }
         } catch (Exception e) {
             e.printStackTrace();
         }
         return jsonUtils.toJson(new ResponseVo(MessageCode.NOT_FOUND, "DB not found!"));
-        //return jsonUtils.toJson(portfolioSvc.get(pUserId));
     }
 
     @RequestMapping(value = {StringConstants.PATH_DOWNLOAD},
