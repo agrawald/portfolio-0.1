@@ -104,3 +104,8 @@ table{
     top:75px;
     text-align: -webkit-right;
 }
+
+input, textarea{
+    padding: 5px 7px;
+    font-family: Segoe UI, Arial, sans-serif;
+}
