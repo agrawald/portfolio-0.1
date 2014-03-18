@@ -26,13 +26,15 @@ public class PortfolioController extends GenericController {
     @ResponseBody
     public String get(@PathVariable String pUserId) throws ApplicationException {
         String fn = "/portfolio.json";
-        URL url = getClass().getResource(fn);
         try {
+            URL url = getClass().getResource(fn);
             File f = new File(url.toURI());
+            System.out.println("file exisits"+ f.exists());
             if (f.exists()) {
+                System.out.println("now returning");
                 return jsonUtils.toJson(jsonUtils.toObject(f, Portfolio.class));
             }
-        } catch (URISyntaxException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return jsonUtils.toJson(new ResponseVo(MessageCode.NOT_FOUND, "DB not found!"));
