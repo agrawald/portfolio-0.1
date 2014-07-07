@@ -8,7 +8,7 @@
     <name>Portfolio</name>
 
     <properties>
-        <spring.version>3.2.0.RELEASE</spring.version>
+        <spring.version>4.0.5.RELEASE</spring.version>
     </properties>
 
     <repositories>
@@ -85,13 +85,13 @@
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>3.0-alpha-1</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
             <version>2.2</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- JUNIT -->
@@ -106,13 +106,13 @@
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
-            <version>2.11.0</version>
+            <version>2.12.2</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
-            <version>1.2.0.RELEASE</version>
+            <version>1.5.0.RELEASE</version>
         </dependency>
 
         <dependency>

@@ -4,7 +4,7 @@ package com.portfolio.utils;
  * Created by e7006722 on 25/02/14.
  */
 public interface StringConstants {
-    String DB_PORTFOLIO = "portfolio";
+    String DB_PORTFOLIO = "db_portfolio";
 
     String BEAN_MONGO_TEMPLATE = "mongoTemplate";
 
@@ -21,7 +21,8 @@ public interface StringConstants {
 
     String PATH_ABOUT = "/about/{" + P_USERID + "}";
     String PATH_DOWNLOAD = "/download/{" + P_USERID + "}";
-    String PATH_PORTFOLIO = "/portfolio/{" + P_USERID + "}";
+    String PATH_PORTFOLIO_MONGO = "/portfolio/{" + P_USERID + "}";
+    String PATH_PORTFOLIO_FILE = "/portfolio/file/{" + P_USERID + "}";
     String PATH_CONTACT_ME = "/contact/{" + P_USERID + "}";
     String PATH_ALL_TESTIMONIAL = "/allTestimonial/{" + P_USERID + "}";
     String PATH_ALL_TECHNOLOGIES = "/allTechnologies/{" + P_USERID + "}";

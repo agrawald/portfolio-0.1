@@ -2,12 +2,17 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/aop
-	    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	    http://www.springframework.org/schema/mvc
+	    http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	    http://www.springframework.org/schema/data/mongo
+	    http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
     <context:component-scan base-package="com.portfolio"/>
     <aop:aspectj-autoproxy/>
     <mvc:annotation-driven />
@@ -17,9 +22,21 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+
     <bean id="logAspect" class="com.portfolio.aspect.LoggingAspect"/>
     <bean id="mapper" class="org.codehaus.jackson.map.ObjectMapper"/>
 
+    <!-- Mongo config -->
+    <mongo:db-factory id="mongoDbFactory" host="localhost"
+                      port="27017" dbname="db_portfolio" />
+
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg ref="mongoDbFactory" />
+    </bean>
+
+    <mongo:repositories base-package="com.portfolio" />
+
+    <!-- eMail configurations -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="host" value="smtp.sendgrid.net"/>
         <property name="port" value="587"/>

@@ -6,6 +6,8 @@ import com.portfolio.model.User;
 import junit.framework.Assert;
 import org.junit.Test;
 
+import java.util.List;
+
 /**
  * Created by e7006722 on 26/02/14.
  */
@@ -34,6 +36,7 @@ public class PortfolioDaoTest extends SpringTest {
     @Test
     public void testFindOne() throws Exception {
         portfolio = portfolioDao.findOne("dagrawal");
+
         Assert.assertNotNull("User id null", portfolio.getId());
         Assert.assertNotNull("User is null", portfolio.getUser());
         Assert.assertNotNull("Organisation is null", portfolio.getOrganisations());
@@ -42,6 +45,15 @@ public class PortfolioDaoTest extends SpringTest {
         Assert.assertEquals("dagrawal", portfolio.getUserId());
 
     }
+
+    @Test
+    public void testFindAll() throws Exception {
+        List<Portfolio> portfolioList = portfolioDao.findAll();
+
+        Assert.assertNotNull(portfolioList);
+        Assert.assertTrue(portfolioList.size()>0);
+    }
+
 
     public void testUpdate() throws Exception {
 

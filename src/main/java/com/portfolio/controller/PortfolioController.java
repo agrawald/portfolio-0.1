@@ -20,11 +20,20 @@ import java.net.URL;
 
 @Controller
 public class PortfolioController extends GenericController {
-    @RequestMapping(value = {StringConstants.PATH_PORTFOLIO},
+    @RequestMapping(value = {StringConstants.PATH_PORTFOLIO_MONGO},
             method = RequestMethod.GET,
             produces = "application/json")
     @ResponseBody
-    public String get(@PathVariable String pUserId) throws ApplicationException {
+    public String getFromMongo(@PathVariable String pUserId) throws ApplicationException {
+        Portfolio portfolio = portfolioSvc.get(pUserId);
+        return jsonUtils.toJson(portfolio);
+    }
+
+    @RequestMapping(value = {StringConstants.PATH_PORTFOLIO_FILE},
+            method = RequestMethod.GET,
+            produces = "application/json")
+    @ResponseBody
+    public String getFromFile(@PathVariable String pUserId) throws ApplicationException {
         String fn = "/portfolio.json";
         try {
             URL url = getClass().getResource(fn);

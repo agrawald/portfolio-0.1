@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * Created by e7006722 on 25/02/14.
  */
-@Document(collection = "portfolios")
+@Document(collection = "portfolio")
 public class Portfolio {
     @Id
     private String id;
